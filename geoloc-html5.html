@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+         <title>api geolocalisation "Ma Position"</title>
+         <script type="text/javascript">
+         function getPosition(position) {
+            var infoposition = "Latitude: "+position.coords.latitude+"<br />";
+            infoposition += "Longitude: "+position.coords.longitude+"<br />";
+            infoposition += "Altitude: "+position.coords.altitude+"<br />";
+            document.getElementById("myposition").innerHTML = infoposition;
+         }
+         function myPosition() {
+            navigator.geolocation.getCurrentPosition(getPosition);
+         }
+         </script>
+      </head>
+      <body>
+         <a href="#" onClick="myPosition()">Afficher ma position</a>
+         <div id="myposition"></div>
+      </body>
+   </html>

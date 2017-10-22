@@ -1,0 +1,3951 @@
+* { margin:0; padding:0; }
+img, form { padding:0px; margin:0px; border:0px; }
+img { display:block; }
+body {
+   background:#000;
+}
+
+#boite_image_partenaire {background:url('http://media.mth.net/sport_plus/images/partenaires/loader.gif') no-repeat #000 83px 125px;position:absolute;top:50%;left:50%;margin-top:-135px;margin-left:-92px;width:185px;height:271px;display:none;z-index:1000000;border:5px solid #fff;}
+
+div#conteneur {
+   position:relative;
+   width:981px;
+   margin:5px auto 0 auto;
+}
+div#conteneur.conteneurProgrammation {
+   height:770px;
+   background:url('http://media.mth.net/sport_plus/images/fond_programmation.jpg') 0px 39px no-repeat;
+   padding-left:0px;
+   width:977px;
+}
+#sous_titre_programmes, #sous_titre_chaine, #sous_titre_recevoir {
+   display:block;
+   margin-bottom:20px;
+}
+#sous_titre_programmes {margin-left:20px;}
+
+.block_part {width:400px;background:#000;float:left;}
+
+#conteneur.homeSport, #conteneur.conteneurTournoi {
+   height:992px;
+   background:url('http://media.mth.net/sport_plus/images/fond_2.jpg') no-repeat 11px 28px;
+   padding-left:0px;
+   /*width:981px;*/
+   width:993px;
+}
+
+div#conteneur.conteneurResultatsGolf {
+   height:1142px;
+   background:url('http://media.mth.net/sport_plus/images/fond_2.jpg') no-repeat 11px 24px;
+   /*background:#000;*/
+   padding-left:0px;
+   width:992px;
+}
+div#conteneur.conteneurHome {
+   /*width:981px;*/
+   width:993px;
+}
+div#enteteGolf {
+   height:121px;
+   background:url('http://media.mth.net/sport_plus/images/fondGolf.jpg') no-repeat -10px 2px #282928;
+   display:none;
+}
+div#banniere{
+   background:#575857;
+   margin:16px 0px 0px 45px;
+   width:728px;
+   height:90px;
+   float:left;
+}
+div#enteteGolf a {
+   float:left;
+}
+div.maintenant {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   color:#AEAEAE;
+   padding:5px 0 0 18px;
+}
+.conteneurConcoursDEBUG div.maintenant {
+   margin-left:1px;
+   padding-left:6px;
+}
+div.menuTop {
+   position:absolute;
+   top:5px; right:0px;
+   text-align:right;
+   width: 798px;
+}
+div.menuTop ul, div.menuTop form, div.menuTop form div {
+   display:block;
+   float:left;
+   line-height:16px;
+}
+div.menuTop ul { list-style-type:none; margin-right:8px;}
+div.menuTop ul li {
+   display:block;
+   float:left;
+   font-family:Verdana, Arial, sans-serif;
+   color:#FFF;
+   font-size:11px;
+   font-weight:bold;
+   border-right:1px solid #FFF;
+   line-height:12px;
+   padding:0px 6px;
+}
+div.menuTop ul li a {
+   color:#FFF;
+   text-decoration:none;
+   position:relative;
+   top:-1px;
+}
+
+div.menuTop ul li span.nolink {
+   color:#FFF;
+   position:relative;
+   top:-1px;
+}
+
+div.menuTop ul li.selectMenuTop a, div.menuTop ul li a:hover, div#piedPage a.selectMenuBottom, div#piedPage a:hover { color:#60BEE7; }
+div.menuTop form div {
+}
+div.menuTop form div input {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   font-weight:bold;
+   color:#FFF;
+   background:#575857;
+   border:0px;
+   height:13px;
+   position:relative;
+   top:-2px;
+   padding:1px 3px 1px 5px;
+   width:148px;
+   display:block;
+   float:left;
+   margin-right:2px;
+}
+div.menuTop form div input.lienBoutonOk {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   font-weight:bold;
+   color:#FFF;
+   background:#575857;
+   height:15px;
+   width:25px;
+   padding: 0px 0 0 3px;
+   text-decoration:none;
+   position:relative;
+   width:25px;
+   display:block;
+   float:left;
+   cursor:hand;
+}
+div.menuTop form div input.lienBoutonOk:hover {
+   color:#575857;
+   background:#FFF;
+}
+div#sousConteneur {
+   margin-top:12px;
+   margin-left:11px;
+   background:url('http://media.mth.net/sport_plus/images/fond.jpg') no-repeat -11px -14px;
+   height:970px;
+}
+div#sousConteneur.sousConteneurHome {
+   width:970px;
+
+   padding-top:14px;
+   padding-top:0px;
+
+   padding-left:11px;
+   background:url('http://media.mth.net/sport_plus/images/fond.jpg') no-repeat 0px -4px;
+}
+.conteneurHome div#sousConteneur.sousConteneurHome {
+   /*background:url('http://media.mth.net/sport_plus/images/home/fond.jpg') no-repeat 0px -7px;*/
+   background:url('http://media.mth.net/sport_plus/images/home/fond.jpg') no-repeat 0px -2px;
+   padding-bottom:5px;
+   height: 1155px;
+}
+div#sousConteneurSport {
+   clear: both;
+   margin-top:12px;
+   margin-left:22px;
+   /*background:url('http://media.mth.net/sport_plus/images/fondGolf.jpg') no-repeat -10px -200px #282928;*/
+   background:url('http://media.mth.net/sport_plus/images/fondGolf.jpg') no-repeat -10px 0px #282928;
+   float:left;
+   position:relative;
+   width:970px;
+   
+}
+div#sousConteneurSport.concours {
+   margin:0px;
+
+   margin-top:12px;
+   /*margin-left:11px;*/
+   
+   
+   padding-top:0px;
+   padding-left:11px;
+
+   /*background:url('http://media.mth.net/sport_plus/images/fondGolf.jpg') no-repeat -10px -200px #282928;*/
+   background:url('http://media.mth.net/sport_plus/images/fond.jpg') no-repeat -0px -0px #282928;
+   float:left;
+   position:relative;
+}
+div#sousConteneurSport.concours.debug_programmes {
+   margin-left:11px;
+   padding-left:11px;
+}
+div#sousConteneurSport.sousConteneurProgrammation {
+   background:url('http://media.mth.net/sport_plus/images/fond_programmation.jpg') no-repeat -11px 9px #282928;
+   margin-left:7px;
+}
+div#conteneur div.concours {
+   /*background:url('http://media.mth.net/sport_plus/images/fondGolf.jpg') no-repeat -10px -174px #282928;*/
+}
+div#sousConteneurVideos {
+   margin-top:12px;
+   padding-left:11px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond.jpg') no-repeat 1px 0px;
+   float:left;
+   position:relative;
+}
+div#sousConteneurVideos.video_vrai_TEMP {
+   background:url('http://media.mth.net/sport_plus/images/videos/fond.jpg') no-repeat -10px -79px #282928;
+}
+div#menu {
+   clear:both;
+   position:relative;
+   margin-bottom:0px;
+   float:left;
+   width:100%;
+   background:url('http://media.mth.net/sport_plus/images/menu/fond_nav_debug.jpg');
+   height:73px;
+}
+.home_debug div#menu {height:73px;}
+div#sousMenu {
+   margin:0px;
+   padding:0px;
+   position:absolute;
+   top:44px;
+   left:178px;
+   float:left;
+   width:792px;
+   height:20px;
+   display:none;
+   z-index:200;
+}
+.debug_discipline div#sousMenu {
+   display:block;
+}
+.conteneurHome div#sousMenu {top:72px;left:200px;}
+.conteneurHome .debug_programmes div#sousMenu {top:44px;}
+.conteneurConcoursDEBUG div#sousMenu, .debug_programmes div#sousMenu {left:189px;}
+
+/* VOLLEY Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuVolley,
+.tournoiVolley #cntEntete .rectPlus,
+.tournoiVolley .rectPlus,
+.tournoiVolley p.retrouver,
+.tournoiVolley #cntEntete .rectPlus,
+.tournoiVolley .rectPlus
+{background:#D74398;}
+/* fond 2 */
+.tournoiVolley #conteneurClassement table thead tr,
+.tournoiVolley .entete_table thead tr,
+.tournoiVolley #conteneurClassement table thead tr td,
+.tournoiVolley .entete_table thead tr td,
+.tournoiVolley #rslts h4,
+.tournoiVolley #rslts table thead tr
+{background:#F7C2E7;}
+/* texte 1 */
+.tournoiVolley div.contenuProg h3,
+.tournoiVolley #rslts table td.score,
+.tournoiVolley #conteneurClassement table tr td
+{color:#F7C2E7;}
+/* Bordure 1 */
+.tournoiVolley #conteneurClassement table thead tr td,
+.tournoiVolley .entete_table thead tr td
+{border-right:1px solid #F7C2E7;}
+/* Bordure 2 */
+.tournoiVolley .boite
+{border:1px solid #D74398;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiVolley #rslts table tr.pair,
+.tournoiVolley #conteneurClassement table tr.impair,
+.tournoiVolley #conteneurRslt table tr.impair
+{background-color:#2B1D25;}
+/* Bordure talbeau page TOURNOI */
+.tournoiVolley #conteneurClassement table tr td,
+.tournoiVolley #conteneurRslt table tr td{border-right:1px solid #6E3154;}
+div.conteneurTournoi.tournoiVolley div.heureProg {background:url('http://media.mth.net/sport_plus/images/tournoi/fond_heure_volley.jpg') repeat-x #6E3154;}
+/* AUTRES SPORTS Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuAutres,
+.tournoiAutres #cntEntete .rectPlus,
+.tournoiAutres .rectPlus,
+.tournoiAutres p.retrouver,
+.tournoiAutres #cntEntete .rectPlus,
+.tournoiAutres .rectPlus
+{background:#60BEE7;}
+/* fond 2 */
+.tournoiAutres #conteneurClassement table thead tr,
+.tournoiAutres .entete_table thead tr,
+.tournoiAutres #conteneurClassement table thead tr td,
+.tournoiAutres .entete_table thead tr td,
+.tournoiAutres #rslts h4,
+.tournoiAutres #rslts table thead tr
+{background:#4CE4FF;}
+/* texte 1 */
+.tournoiAutres div.contenuProg h3,
+.tournoiAutres #rslts table td.score,
+.tournoiAutres #conteneurClassement table tr td
+{color:#4CE4FF;}
+/* Bordure 1 */
+.tournoiAutres #conteneurClassement table thead tr td,
+.tournoiAutres .entete_table thead tr td
+{border-right:1px solid #4CE4FF;}
+/* Bordure 2 */
+.tournoiAutres .boite
+{border:1px solid #60BEE7;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiAutres #rslts table tr.pair,
+.tournoiAutres #conteneurClassement table tr.impair,
+.tournoiAutres #conteneurRslt table tr.impair
+{background-color:#1F292D;}
+/* Bordure talbeau page TOURNOI */
+.tournoiAutres #conteneurClassement table tr td,
+.tournoiAutres #conteneurRslt table tr td{border-right:1px solid #385F70;}
+
+/* SPORT US Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuSportsUS,
+.tournoiSportsUS #cntEntete .rectPlus,
+.tournoiSportsUS .rectPlus,
+.tournoiSportsUS p.retrouver,
+.tournoiSportsUS #cntEntete .rectPlus,
+.tournoiSportsUS .rectPlus
+{background:#A454C6;}
+/* fond 2 */
+.tournoiSportsUS #conteneurClassement table thead tr,
+.tournoiSportsUS .entete_table thead tr,
+.tournoiSportsUS #conteneurClassement table thead tr td,
+.tournoiSportsUS .entete_table thead tr td,
+.tournoiSportsUS #rslts h4,
+.tournoiSportsUS #rslts table thead tr
+{background:#E9B5FF;}
+/* texte 1 */
+.tournoiSportsUS div.contenuProg h3,
+.tournoiSportsUS #rslts table td.score,
+.tournoiSportsUS #conteneurClassement table tr td
+{color:#E9B5FF;}
+/* texte 2 */
+.tournoiSportsUS #conteneurClassement table tr td.cel_4,
+.tournoiSportsUS #conteneurClassement table tr td.cel_5,
+.tournoiSportsUS #conteneurClassement table tr td.cel_6,
+.tournoiSportsUS #conteneurClassement table tr td.cel_7,
+.tournoiSportsUS #conteneurClassement table tr td.cel_8,
+.tournoiSportsUS #conteneurClassement table tr td.cel_9,
+.tournoiSportsUS #conteneurClassement table tr td.cel_10
+{color:#A454C6;}
+/* Bordure 1 */
+.tournoiSportsUS #conteneurClassement table thead tr td,
+.tournoiSportsUS .entete_table thead tr td
+{border-right:1px solid #E9B5FF;}
+/* Bordure 2 */
+.tournoiSportsUS .boite
+{border:1px solid #A454C6;} 
+/* fond et bordures tableau TOURNOI*/
+.tournoiSportsUS #rslts table tr.pair,
+.tournoiSportsUS #conteneurClassement table tr.impair,
+.tournoiSportsUS #conteneurRslt table tr.impair
+{background-color:#1D1521;}
+/* Bordure talbeau page TOURNOI */
+.tournoiSportsUS #conteneurClassement table tr td,
+.tournoiSportsUS #conteneurRslt table tr td{border-right:1px solid #543462;}
+div.conteneurTournoi.tournoiSportsUS div.heureProg {background:url('http://media.mth.net/sport_plus/images/tournoi/fond_heure_us.jpg') repeat-x #543462;}
+/* SPORT DE GLISSE Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuSportsdeglisse,
+.tournoiSportsdeglisse #cntEntete .rectPlus,
+.tournoiSportsdeglisse .rectPlus,
+.tournoiSportsdeglisse p.retrouver,
+.tournoiSportsdeglisse #cntEntete .rectPlus,
+.tournoiSportsdeglisse .rectPlus
+{background:#A88766;}
+/* fond 2 */
+.tournoiSportsdeglisse #conteneurClassement table thead tr,
+.tournoiSportsdeglisse .entete_table thead tr,
+.tournoiSportsdeglisse #conteneurClassement table thead tr td,
+.tournoiSportsdeglisse .entete_table thead tr td,
+.tournoiSportsdeglisse #rslts h4,
+.tournoiSportsdeglisse #rslts table thead tr
+{background:#D6C18B;}
+/* texte 1 */
+.tournoiSportsdeglisse div.contenuProg h3,
+.tournoiSportsdeglisse #rslts table td.score,
+.tournoiSportsdeglisse #conteneurClassement table tr td
+{color:#D6C18B;}
+/* Bordure 1 */
+.tournoiSportsdeglisse #conteneurClassement table thead tr td,
+.tournoiSportsdeglisse .entete_table thead tr td
+{border-right:1px solid #D6C18B;}
+/* Bordure 2 */
+.tournoiSportsdeglisse .boite
+{border:1px solid #A88766;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiSportsdeglisse #rslts table tr.pair,
+.tournoiSportsdeglisse #conteneurClassement table tr.impair,
+.tournoiSportsdeglisse #conteneurRslt table tr.impair
+{background-color:#272320;}
+/* Bordure talbeau page TOURNOI */
+.tournoiSportsdeglisse #conteneurClassement table tr td,
+.tournoiSportsdeglisse #conteneurRslt table tr td{border-right:1px solid #56493A;}
+div.conteneurTournoi.tournoiSportsdeglisse div.heureProg {background:url('http://media.mth.net/sport_plus/images/tournoi/fond_heure_glisse.jpg') repeat-x #56493A;}
+/* GOLF Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuGolf,
+.tournoiGolf #cntEntete .rectPlus,
+.tournoiGolf .rectPlus,
+.tournoiGolf p.retrouver,
+.tournoiGolf #cntEntete .rectPlus,
+.tournoiGolf .rectPlus
+{background:#198A5F;}
+/* fond 2 */
+.tournoiGolf #conteneurClassement table thead tr,
+.tournoiGolf .entete_table thead tr,
+.tournoiGolf #conteneurClassement table thead tr td,
+.tournoiGolf #conteneurCalendrier table thead tr td,
+.tournoiGolf .entete_table thead tr td,
+.tournoiGolf #rslts h4,
+.tournoiGolf #rslts table thead tr
+{background:#45DA7D;}
+ .tournoiGolf #rslts table td {
+   text-align: left;
+   padding-left: 10px;
+}
+/* texte 1 */
+.tournoiGolf div.contenuProg h3,
+.tournoiGolf #rslts table td.score,
+.tournoiGolf #classement table tbody tr td,
+.tournoiGolf #conteneurRslt table tr td,
+.tournoiGolf #conteneurCalendrier table tr td,
+.tournoiGolf #rslts table
+{color:#45DA7D;}
+.tournoiGolf #rslts table tr td span,
+.tournoiGolf #classement table tr td span
+ { color: #198A5F;}
+/* Bordure 1 */
+.tournoiGolf #conteneurClassement table thead tr td,
+.tournoiGolf .entete_table thead tr td
+{border-right:1px solid #45DA7D;}
+/* Bordure 2 */
+.tournoiGolf .boite
+{border:1px solid #198A5F;} 
+/* fond et bordures tableau TOURNOI*/
+.tournoiGolf #rslts table tr.pair,
+.tournoiGolf #conteneurClassement table tr.impair,
+.tournoiGolf #conteneurCalendrier table tr.impair,
+.tournoiGolf #conteneurRslt table tr.impair
+{background-color:#18241F;}
+/* Bordure talbeau page TOURNOI */
+.tournoiGolf #conteneurClassement table tr td,
+.tournoiGolf #conteneurCalendrier table tr td,
+.tournoiGolf #conteneurRslt table tr td{border-right:1px solid #1C4E40;}
+.tournoiGolf #contenu #cntEntete div#presentation { background-image: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-golf.jpg);}
+#contenu #cntEntete div#presentation li#licanal span.rectPlus{height:20px;float:left;}
+.tournoiGolf #contenu div.heureProg { background-image:url(http://media.mth.net/sport_plus/images/tournoi/fond-heure-golf.jpg); }
+.tournoiGolf #rslts td.cel_1 { width: 135px;}
+.tournoiGolf #rslts td.cel_2 { width: 145px;}
+.tournoiGolf #rslts td.cel_3 { width: 157px;}
+.tournoiGolf #classement table td.cel_1 { width: 62px;}
+.tournoiGolf #classement table td.cel_2 { width: 360px;}
+.tournoiGolf #classement table td.cel_3 { width: 100px;}
+.tournoiGolf #classement table td.cel_4 { width: auto;}
+.tournoiGolf #contenu  #classement {margin-bottom: 10px;}
+.tournoiGolf #classement #conteneurClassement {height: 180px;}
+.tournoiGolf #calendrier #conteneurCalendrier {height: 180px;}
+.tournoiGolf #calendrier table td.cel_1 { width: 120px;}
+.tournoiGolf #calendrier table td.cel_2 { width: 300px;}
+.tournoiGolf #calendrier table td.cel_3 { width: auto;}
+.tournoiGolf #calendrier table td.date { font-size: 9px;}
+.tournoiGolf #calendrier table td.titre { text-transform: uppercase;}
+/* FOOT Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuFoot,
+.tournoiFoot #cntEntete .rectPlus,
+.tournoiFoot .rectPlus,
+.tournoiFoot p.retrouver,
+.tournoiFoot #cntEntete .rectPlus,
+.tournoiFoot .rectPlus
+{background:#7ABD5E;}
+/* fond 2 */
+.tournoiFoot #conteneurClassement table thead tr,
+.tournoiFoot .entete_table thead tr,
+.tournoiFoot #conteneurClassement table thead tr td,
+.tournoiFoot .entete_table thead tr td,
+.tournoiFoot #rslts h4,
+.tournoiFoot #rslts table thead tr
+{background:#B2FF91;}
+/* texte 1 */
+.tournoiFoot div.contenuProg h3,
+.tournoiFoot #rslts table td.score,
+.tournoiFoot #conteneurClassement table tr td,
+.tournoiFoot #conteneurRslt table tr td
+{color:#B2FF91;}
+/* Bordure 1 */
+.tournoiFoot #conteneurClassement table thead tr td,
+.tournoiFoot .entete_table thead tr td
+{border-right:1px solid #B2FF91;}
+/* Bordure 2 */
+.tournoiFoot .boite
+{border:1px solid #7ABD5E;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiFoot #rslts table tr.pair,
+.tournoiFoot #conteneurClassement table tr.impair,
+.tournoiFoot #conteneurRslt table tr.impair
+{background-color:#22291F;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiFoot #rslts table tr.pair,
+.tournoiFoot #conteneurClassement table tr.impair,
+.tournoiFoot #conteneurRslt table tr.impair
+{background-color:#21281E;}
+/* Bordure talbeau page TOURNOI */
+.tournoiFoot #conteneurClassement table tr td,
+.tournoiFoot #conteneurRslt table tr td{border-right:1px solid #435F37;}
+.tournoiFoot #texteEntete h2 span {color: #B2FF91;}
+.tournoiFoot #cntEntete div#presentation { background-image: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-foot.jpg);}
+
+
+/* RUGBY Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuRugby,
+.tournoiRugby #cntEntete .rectPlus,
+.tournoiRugby .rectPlus,
+.tournoiRugby p.retrouver,
+.tournoiRugby #cntEntete .rectPlus,
+.tournoiRugby .rectPlus
+{background:#E4322D;}
+/* fond 2 */
+.tournoiRugby #conteneurClassement table thead tr,
+.tournoiRugby .entete_table thead tr,
+.tournoiRugby #conteneurClassement table thead tr td,
+.tournoiRugby .entete_table thead tr td,
+.tournoiRugby #rslts h4,
+.tournoiRugby #rslts table thead tr
+{background:#FF9791;}
+/* texte 1 */
+.tournoiRugby div.contenuProg h3,
+.tournoiRugby #rslts table td.score,
+.tournoiRugby #conteneurClassement table tr td,
+.tournoiRugby #conteneurRslt table tr td
+{color:#FF9791;}
+/* Bordure 1 */
+.tournoiRugby #conteneurClassement table thead tr td,
+.tournoiRugby .entete_table thead tr td
+{border-right:1px solid #FF9791;}
+/* Bordure 2 */
+.tournoiRugby .boite
+{border:1px solid #E4322D;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiRugby #rslts table tr.pair,
+.tournoiRugby #conteneurClassement table tr.impair,
+.tournoiRugby #conteneurRslt table tr.impair
+{background-color:#2C1A19;}
+/* Bordure talbeau page TOURNOI */
+.tournoiRugby #conteneurClassement table tr td,
+.tournoiRugby #conteneurRslt table tr td{border-right:1px solid #6E2523;}
+.tournoiRugby #texteEntete h2 span { color: #FF9791;}
+.tournoiRugby #contenu #cntEntete div#presentation { background-image: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-rugby.jpg);}
+.tournoiRugby #contenu div.heureProg { background-image:url(http://media.mth.net/sport_plus/images/tournoi/fond-heure-rugby.jpg); }
+/* TENNIS Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuTennis,
+.tournoiTennis #cntEntete .rectPlus,
+.tournoiTennis .rectPlus,
+.tournoiTennis p.retrouver,
+.tournoiTennis #cntEntete .rectPlus,
+.tournoiTennis .rectPlus
+{background:#D7B53B;}
+/* fond 2 */
+.tournoiTennis #conteneurClassement table thead tr,
+.tournoiTennis .entete_table thead tr,
+.tournoiTennis #conteneurClassement table thead tr td,
+.tournoiTennis .entete_table thead tr td,
+.tournoiTennis #rslts h4,
+.tournoiTennis #rslts table thead tr
+{background:#FAF6A2;}
+/* texte 1 */
+.tournoiTennis div.contenuProg h3,
+.tournoiTennis #rslts table td.score,
+.tournoiTennis #conteneurClassement table tr td
+{color:#FAF6A2;}
+/* Bordure 1 */
+.tournoiTennis #conteneurClassement table thead tr td,
+.tournoiTennis .entete_table thead tr td
+{border-right:1px solid #FAF6A2;}
+/* Bordure 2 */
+.tournoiTennis .boite
+{border:1px solid #D7B53B;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiTennis #rslts table tr.pair,
+.tournoiTennis #conteneurClassement table tr.impair,
+.tournoiTennis #conteneurRslt table tr.impair
+{background-color:#2A271A;}
+/* Bordure talbeau page TOURNOI */
+.tournoiTennis #conteneurClassement table tr td,
+.tournoiTennis #conteneurRslt table tr td{border-right:1px solid #695C29;}
+div.conteneurTournoi.tournoiTennis div.heureProg {background:url('http://media.mth.net/sport_plus/images/tournoi/fond-heure-tennis.jpg') repeat-x #4C4015;}
+/* HAND Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuHand,
+.tournoiHand #cntEntete .rectPlus,
+.tournoiHand .rectPlus,
+.tournoiHand p.retrouver,
+.tournoiHand #cntEntete .rectPlus,
+.tournoiHand .rectPlus
+{background:#4F8BCA;}
+/* fond 2 */
+.tournoiHand #conteneurClassement table thead tr,
+.tournoiHand .entete_table thead tr,
+.tournoiHand #conteneurClassement table thead tr td,
+.tournoiHand .entete_table thead tr td,
+.tournoiHand #rslts h4,
+.tournoiHand #rslts table thead tr
+{background:#80CCFF;}
+/* texte 1 */
+.tournoiHand div.contenuProg h3,
+.tournoiHand #rslts table td.score,
+.tournoiHand #conteneurClassement table tr td
+{color:#80CCFF;}
+/* texte 2 */
+.tournoiHand #conteneurClassement table tr td.cel_4,
+.tournoiHand #conteneurClassement table tr td.cel_5,
+.tournoiHand #conteneurClassement table tr td.cel_6,
+.tournoiHand #conteneurClassement table tr td.cel_7,
+.tournoiHand #conteneurClassement table tr td.cel_8,
+.tournoiHand #conteneurClassement table tr td.cel_9,
+.tournoiHand #conteneurClassement table tr td.cel_10
+{color:#4F8BCA;}
+/* Bordure 1 */
+.tournoiHand #conteneurClassement table thead tr td,
+.tournoiHand .entete_table thead tr td
+{border-right:1px solid #80CCFF;}
+/* Bordure 2 */
+.tournoiHand .boite
+{border:1px solid #4F8BCA;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiHand #rslts table tr.pair,
+.tournoiHand #conteneurClassement table tr.impair,
+.tournoiHand #conteneurRslt table tr.impair
+{background-color:#1E242A;}
+/* Bordure talbeau page TOURNOI */
+.tournoiHand #conteneurClassement table tr td,
+.tournoiHand #conteneurRslt table tr td{border-right:1px solid #273C53;}
+.tournoiHand #contenu div.heureProg { background-image:url(http://media.mth.net/sport_plus/images/tournoi/fond_heure_hand.jpg); }
+
+div#sousMenu ul#sousMenuGolf { background:#198A5F; }
+div#sousMenu ul#sousMenuTennis { background:#D7B53B; }
+div#sousMenu ul#sousMenuRugby{ background:#E4322D; }
+div#sousMenu ul#sousMenuVolley{ background:#D74398; }
+div#sousMenu ul#sousMenuSportsUS { background:#A454C6; }
+div#sousMenu ul#sousMenuHockey { background:#A454C6; }
+div#sousMenu ul#sousMenuLigueMagnus { background:#A454C6; }
+div#sousMenu ul#sousMenuSportsdeglisse { background:#A88766; }
+div#sousMenu ul#sousMenuAutres { background:#60BEE7; }
+
+div#sousMenu ul { list-style-type:none; float:left;width:792px;}
+div#sousMenu ul li {display:block; float:left;}
+div#sousMenu ul li a {
+   display:block;
+   color:#FFF;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   text-decoration:none;
+   padding:4px 11px 5px;
+   white-space: nowrap;
+}
+div#sousMenu ul li a:hover {color:#000;}
+div#sousMenu ul li a.select { color:#000; }
+div#menu ul.homeSportUl {
+   /*background:url('http://media.mth.net/sport_plus/images/menu/fond_nav_vide.jpg') repeat-x;*/
+   height:62px;
+   
+   background:url('http://media.mth.net/sport_plus/images/menu/fond_nav_debug_2.jpg');
+}
+div#menu ul { list-style-type:none; display:block;height:52px;padding:0px;
+padding-top:10px;
+/*background:url('http://media.mth.net/sport_plus/images/menu/fond_nav_debug.jpg');*/
+background:url('http://media.mth.net/sport_plus/images/menu/fond_nav_debug_2.jpg');
+}
+div#menu ul li { display:block; float:left; }
+
+div#menu ul li a { height:52px;display:block; float:left; }
+div#menu ul li a.lienMenu { height:21px;display:block; float:left; margin-top:13px; background-position:top left;}
+
+
+a#lienMenuAccueil { background:url('http://media.mth.net/sport_plus/images/navhome/logo.jpg') no-repeat; width:176px;padding-right:2px; }
+div#menu ul.homeSportUl li a#lienMenuAccueil:hover {background-position:0px 0px; }
+
+a#lienMenuBasket { background:url('http://media.mth.net/sport_plus/images/menu/basket.jpg') no-repeat 0px 0px #fff; width:91px; }
+a#lienMenuBasket:hover { background:url('http://media.mth.net/sport_plus/images/menu/basket.jpg') no-repeat 0px -21px #fff; width:91px; }
+a#lienMenuHand { background:url('http://media.mth.net/sport_plus/images/menu/hand.jpg') no-repeat 0px 0px #fff; width:55px; }
+a#lienMenuHand:hover { background:url('http://media.mth.net/sport_plus/images/menu/hand.jpg') no-repeat 0px -21px #fff; width:55px; }
+a#lienMenuFoot { background:url('http://media.mth.net/sport_plus/images/menu/foot.jpg') no-repeat 0px 0px #fff; width:56px; }
+a#lienMenuFoot:hover { background:url('http://media.mth.net/sport_plus/images/menu/foot.jpg') no-repeat 0px -21px #fff; width:56px; }
+a#lienMenuGolf { background:url('http://media.mth.net/sport_plus/images/menu/golf.jpg') no-repeat 0px 0px #fff; width:53px; }
+a#lienMenuGolf:hover { background:url('http://media.mth.net/sport_plus/images/menu/golf.jpg') no-repeat 0px -21px #fff; width:53px; }
+a#lienMenuTennis { background:url('http://media.mth.net/sport_plus/images/menu/tennis.jpg') no-repeat 0px 0px #fff; width:67px; }
+a#lienMenuTennis:hover { background:url('http://media.mth.net/sport_plus/images/menu/tennis.jpg') no-repeat 0px -21px #fff; width:67px; }
+a#lienMenuRugby { background:url('http://media.mth.net/sport_plus/images/menu/rugby.jpg') no-repeat 0px 0px #fff; width:66px; }
+a#lienMenuRugby:hover { background:url('http://media.mth.net/sport_plus/images/menu/rugby.jpg') no-repeat 0px -21px #fff; width:66px; }
+a#lienMenuVolley { background:url('http://media.mth.net/sport_plus/images/menu/volley.jpg') no-repeat 0px 0px #fff; width:62px; }
+a#lienMenuVolley:hover { background:url('http://media.mth.net/sport_plus/images/menu/volley.jpg') no-repeat 0px -21px #fff; width:62px; }
+a#lienMenuSportsUS { background:url('http://media.mth.net/sport_plus/images/menu/sport_us.jpg') no-repeat 0px 0px #fff; width:89px; }
+a#lienMenuSportsUS:hover { background:url('http://media.mth.net/sport_plus/images/menu/sport_us.jpg') no-repeat 0px -21px #fff; width:89px; }
+
+a#lienMenuHockey { background:url('http://media.mth.net/sport_plus/images/menu/sport_us.jpg') no-repeat 0px 0px #fff; width:89px; }
+a#lienMenuLigueMagnus { background:url('http://media.mth.net/sport_plus/images/menu/sport_us.jpg') no-repeat 0px 0px #fff; width:89px; }
+a#lienMenuHockey:hover { background:url('http://media.mth.net/sport_plus/images/menu/sport_us.jpg') no-repeat 0px -21px #fff; width:89px; }
+a#lienMenuLigueMagnus:hover { background:url('http://media.mth.net/sport_plus/images/menu/sport_us.jpg') no-repeat 0px -21px #fff; width:89px; }
+
+a#lienMenuSportsdeglisse { background:url('http://media.mth.net/sport_plus/images/menu/glisse.jpg') no-repeat 0px 0px #fff; width:123px; }
+a#lienMenuSportsdeglisse:hover { background:url('http://media.mth.net/sport_plus/images/menu/glisse.jpg') no-repeat 0px -21px #fff; width:123px; }
+a#lienMenuAutres { background:url('http://media.mth.net/sport_plus/images/menu/autres_sports.jpg') no-repeat 0px 0px #fff; width:130px; }
+a#lienMenuAutres:hover { background:url('http://media.mth.net/sport_plus/images/menu/autres_sports.jpg') no-repeat 0px -21px #fff; width:130px; }
+
+/*div#menu ul.homeSportUl li a.sousMenuSelect, div#menu ul.homeSportUl li a:hover { background-position:0px -21px; }*/
+div#menu ul.homeSportUl li a.sousMenuSelect, div#menu ul.homeSportUl li a.sport_id_select { background-position:0px -21px; }
+
+ul#sousMenuBasket, ul#sousMenuRugby, ul#sousMenuVolley, ul#sousMenuHand, ul#sousMenuFoot, ul#sousMenuGolf, ul#sousMenuTennis,ul#sousMenuSportsUS, ul#sousMenuSportsdeglisse, ul#sousMenuAutres { display:none; }
+#sousMenu ul.select_sous_menu {display:block;}
+
+div#menu ul li a img { display:block;}
+div#contenu {
+   margin-top:4px;
+   float:left;
+   width:635px;
+   z-index:1;  
+}
+div#contenu.contenuTournoi, .homeSport div#contenu, .conteneurHome div#contenu {margin-top:4px;}
+.homeSport div#contenu {margin-bottom:6px;}
+/*div#contenu.contenuHome {
+   margin-top:14px;
+}*/
+div#contenu.goodiesContenu {
+   margin-top:0px;
+}
+div.golfContenu2 {
+   margin-top:4px;
+   /*margin-bottom:20px;*/
+   margin-bottom:0px;
+}
+div.programmationContenu {
+   margin-top:4px;
+   margin-bottom:10px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;
+   padding-top:24px;
+}
+
+div#contenu.videosContenu {
+   width:635px;
+   margin-top:4px;
+   /*padding:20px 20px 0px 20px;*/
+   height:100px;
+}
+div.conteneurVideos {
+   position:relative;
+   width:595px;
+   padding:20px;
+   float:left;
+   padding-top:24px;margin-top:4px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;
+}
+div.conteneurGoodies {
+   position:relative;
+   width:595px;
+   padding:20px;
+   float:left;
+   padding-top:20px;margin-top:4px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;
+   }
+div.conteneurConcours, div.conteneurMentions, div.conteneurPresse, div.conteneurRecevoir {
+   position:relative;
+   width:595px;
+   padding:20px;
+   margin-top:4px;
+   float:left;
+   padding-top:20px;
+   /*background:url('http://media.mth.net/sport_plus/images/goodies/fond.jpg') no-repeat -10px 0px #282928;*/
+   /*background:url('http://media.mth.net/sport_plus/images/goodies/fond.jpg') no-repeat -10px -4px #282928;*/
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;
+}
+
+div.conteneurEdito{
+   position:relative;
+   /*width:595px;*/
+   width:635px;
+   padding:0px;
+   margin-top:4px;
+   float:left;
+   padding-top:0px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;
+}
+
+div.contenuEdito{
+   padding-top:5px;
+}
+.contenuEdito h1 {margin-bottom:15px;padding-bottom:10px;border-bottom:1px solid #454846;}
+.contenuEdito #lien_vers_actu_depuis_edito {position:absolute;top:27px;right:21px;}
+
+div.conteneurConcours{
+color:#FFFFFF;
+display:block;
+font-family:Verdana,Arial,sans-serif;
+font-size:11px;
+}
+div.conteneurChaine {
+   position:relative;
+   width:595px;
+   padding:20px;
+   float:left;
+   padding-top:20px;margin-top:4px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;
+}
+div.conteneurVideos h1 {
+   border-bottom:1px solid #454846;
+   padding-bottom:18px;
+   margin-bottom:18px;
+}
+div.conteneurVideos h2, div.conteneurGoodies h2 {
+   margin-bottom:40px;
+}
+div.conteneurVideos ul, div.conteneurGoodies ul { list-style-type:none; }
+div.conteneurVideos li, div.conteneurGoodies li {
+   display:block;
+   float:left;
+}
+
+div.conteneurVideos li{
+   height:190px;
+}
+
+div.navPagesVideo li{
+   height:auto;
+}
+div.conteneurGoodies li {
+   margin-right:76px;
+   height:200px;
+}
+div.conteneurGoodies li.bordGoodies {
+   margin-right:0px;
+}
+div.conteneurGoodies h3 {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   font-weight:bold;
+   color:#60BEE7;
+   margin:2px 0px 9px;
+   width:147px;
+}
+div.conteneurGoodies li a {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   font-weight:bold;
+   color:#FFF;
+   text-decoration:none;
+   display:block;
+   margin-bottom:1px;
+}
+div.conteneurGoodies li a:hover {
+   text-decoration:underline;
+}
+a.video {
+   position:relative;
+   display:block;
+   width:147px;
+   height:145px;
+   border:1px solid #000;
+   padding:10px;
+   margin-right:44px;
+   margin-bottom:6px;
+   text-decoration:none;
+}
+a.video img {
+   width:145px;
+   height:90px;
+}
+a.video.bord {
+   margin-right:0px;
+}
+a.video:hover {
+   border:1px solid #60BEE7;
+}
+span.titreVideo, span.textVideo, span.dateVideo {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   color:#FFF;
+   display:block;
+}
+div.conteneurVideos div.divVideo{
+position:absolute;
+top:87px;
+width:145px;
+z-index:10000;
+}
+div.conteneurVideos span.dureeVideo{
+background-color:#000000;
+color:#FFFFFF;
+font-weight:bold;
+z-index:10000;
+float:right;
+padding:0 5px;
+font-family:Verdana,Arial,sans-serif;
+font-size:11px;
+}
+
+div.holderVideo div.divVideo{
+position:absolute;
+top:43px;
+left:0px;
+width:80px;
+z-index:10000;
+}
+div.holderVideo span.dureeVideo{
+background-color:#000000;
+color:#FFFFFF;
+font-weight:bold;
+z-index:10000;
+float:right;
+padding:0 5px;
+font-family:Verdana,Arial,sans-serif;
+font-size:9px;
+text-align:center;
+width:25px;
+}
+span.titreVideo {
+   font-weight:bold;
+   margin-top:5px;
+}
+img.filtre {
+   position:absolute;
+   top:10px;
+   left:10px;
+}
+div.navPagesVideo {
+   /*margin-top:20px;*/
+   margin-top:2px;
+   width:100%;
+   float:left;
+   border-top:1px solid #454846;
+   padding-top:10px;
+}
+div.multiPages {
+   float:left;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#FFF;
+}
+div.multiPages ul {
+   float:left;
+}
+div.multiPages li {
+   float:left;
+}
+div.multiPages a {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#FFF;
+   text-decoration:none;
+}
+.intitulePage {
+   color:#fff;
+}
+a.pagePrecedente {
+   display:block;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#FFF;
+   text-decoration:none;
+   position:absolute;
+   bottom:20px;
+   left:393px;
+   width:114px;
+}
+a.pagePrecedente_2 {
+   display:block;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#FFF;
+   text-decoration:none;
+   position:absolute;
+   bottom:20px;
+   left:385px;
+   width:114px;
+}
+a.pageSuivante {
+   display:block;
+   left:519px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#FFF;
+   text-decoration:none;
+   position:absolute;
+   width:97px;
+}
+a.pageSuivante:hover, a.pagePrecedente:hover, a.pagePrecedente_2:hover, div.multiPages a:hover, div.multiPages a.multiPagesSelect {
+   color:#60BEE7;
+}
+
+
+div#evenement {
+   position:relative;
+   height:195px;
+   background:#333;
+}
+img.imageBandeau {
+   position:absolute;
+   display:block;
+   width:635px;
+   height:195px;
+}
+img.imageBandeau2 {
+   position:absolute;
+   display:block;
+   width:635px;
+   height:142px;
+}
+div.textEvenement {
+   position:absolute;
+   top:7px;
+   left:10px;
+   width:160px;
+   zoom:1;
+}
+div.textEvenement * {
+   position:relative;
+   zoom:1;
+}
+
+div.homediv {
+   position:absolute;
+   top:10px;
+   left:10px;
+   width:155px;
+}
+
+div.infosEvenement {
+   /*position:absolute;
+   height:157px;
+   top:142px;*/
+   position:relative;
+   left:0px;
+   width:100%;
+   float:left;
+}
+div.infoEvenement {
+   /*position:absolute;
+   height:127px;*/
+   float:left;
+   position:relative;
+   top:0px;
+   left:0px;
+   width:374px;
+   padding:15px 10px;
+   background:url('http://media.mth.net/sport_plus/images/golf_resultats/evenement_fond.jpg') repeat-x;
+
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#C4BABA;
+   margin-bottom:15px;
+   color:#fff;
+}
+div.diffusions {
+   /*position:absolute;
+   height:127px;
+   left:395px;*/
+
+   position:relative;
+   margin-left:1px;
+   float:left;
+   top:0px;
+   width:220px;
+   padding:15px 10px;
+   background:url('http://media.mth.net/sport_plus/images/golf_resultats/evenement_fond.jpg') repeat-x;
+}
+div.diffusions h2 {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:11px;
+   color:#68A733;
+   margin-bottom:6px;
+}
+div.diffusions span.important {
+   color:#DFDFDF;
+}
+div.diffusions span.tresImportant {
+   color:#68A733;
+}
+div.diffusions p {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#C4BABA;
+   margin-bottom:15px;
+}
+
+p.contenuEvenementSemaine{
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:19px;
+   color:#FFF;
+padding-bottom:15px;
+}
+div.textEvenement h1 {
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:24px;
+   color:#FAF6A2;
+   margin-bottom:10px;
+}
+
+div.AutresTextEvenement h1 {
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:24px;
+   color:#4CE4FF ;
+   margin-bottom:10px;
+}
+
+div.AutressportsTextEvenement h1 {
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:24px;
+   color:#4CE4FF ;
+   margin-bottom:10px;
+}
+
+.conteneurBasket div.textEvenement h1 {color:#FFBC8F;}
+.conteneurHand div.textEvenement h1 {color:#80CCFF;}
+.conteneurFoot div.textEvenement h1 {color:#B2FF91;}
+.conteneurGolf div.textEvenement h1 {color:#45DA7D;}
+.conteneurTennis div.textEvenement h1 {color:#FAF6A2;}
+.conteneurRugby div.textEvenement h1 {color:#FF9791;}
+.conteneurVolley div.textEvenement h1  {color:#F7C2E7;}
+.conteneurSportsUS div.textEvenement h1  {color:#E9B5FF;}
+.conteneurHockey div.textEvenement h1  {color:#E9B5FF;}
+.conteneurLigueMagnus div.textEvenement h1  {color:#E9B5FF;}
+.conteneurSportsdeglisse div.textEvenement h1  {color:#D6C18B;}
+.conteneurAutresSports div.textEvenement h1  {color:#4CE4FF;}
+
+
+span.sousTitre {
+   display:block;
+   color:#fff;
+   font-size:18px;
+   line-height:20px;
+}
+
+.important {
+   font-weight:bold;
+}
+.tresImportant {
+   font-weight:bold;
+   text-transform:uppercase;
+}
+p.contenuEvenement {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#FFF;
+   margin-bottom:10px;
+   text-align:left;
+}
+p.contenuEvenement.important {
+   font-size:12px;
+}
+a.lienEvenement1 {
+   position:absolute;
+   bottom:10px;
+   left:10px;
+   width:140px;
+   background:#FFF;
+   color:#D7B53B;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   padding:2px 3px 2px 15px;
+   text-decoration:none;
+}
+a.lienEvenement1.golfLienEvenement1 {
+   color:#579D1C;
+}
+span.plus {
+   display:block;
+   position:absolute;
+   top:50%;
+   margin-top:-7px;
+   left:3px;
+   font-weight:bold;
+   font-size:12px;
+}
+a.lienEvenement2 {
+   position:absolute;
+   top:223px;
+   left:576px;
+   color:#D7B53B;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:60px;
+   text-decoration:none;
+}
+a.lienEvenement1.BasketLienEvenement1 {color:#FF8D3D;}
+a.lienEvenement1.HandLienEvenement1 {color:#4F8BCA;}
+a.lienEvenement1.FootLienEvenement1 {color:#7ABD5E;}
+a.lienEvenement1.GolfLienEvenement1 {color:#198A5F;}
+a.lienEvenement1.TennisLienEvenement1 {color:#D7B53B;}
+a.lienEvenement1.RugbyLienEvenement1 {color:#E4322D;}
+a.lienEvenement1.VolleyLienEvenement1 {color:#D74398;}
+a.lienEvenement1.SportsUSLienEvenement1 {color:#A454C6;}
+a.lienEvenement1.SportsdeglisseLienEvenement1 {color:#A88766;}
+a.lienEvenement1.AutresLienEvenement12 {color:#60BEE7;}
+
+
+a.lienEvenement2.BasketLienEvenement2 {color:#FF8D3D;}
+a.lienEvenement2.HandLienEvenement2 {color:#4F8BCA;}
+a.lienEvenement2.FootLienEvenement2 {color:#7ABD5E;}
+a.lienEvenement2.GolfLienEvenement2 {color:#198A5F;}
+a.lienEvenement2.TennisLienEvenement2 {color:#D7B53B;}
+a.lienEvenement2.RugbyLienEvenement2 {color:#E4322D;}
+a.lienEvenement2.VolleyLienEvenement2 {color:#D74398;}
+a.lienEvenement2.SportsUSLienEvenement2 {color:#A454C6;}
+a.lienEvenement2.SportsUSLienEvenement2 {color:#A454C6;}
+a.lienEvenement2.SportsdeglisseLienEvenement2 {color:#A88766;}
+a.lienEvenement2.AutresLienEvenement2 {color:#60BEE7;}
+
+
+div#boiteDefil {
+   margin-top:4px;
+   background:url(http://media.mth.net/sport_plus/images/home/fond-barre-defilante.jpg) repeat-x #FFF;
+   height:25px;
+   overflow:hidden;
+   padding:0px;
+   width:633px;
+   border: 1px solid #7A7B7A;
+}
+div#boiteDefil span {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:11px;
+   color:#F00;
+   border-right:2px solid #F00;
+   margin-right:10px;
+   margin-left:40px;
+   padding-right:10px;
+   text-transform:uppercase;
+   display:inline;
+}
+div#boiteDefil h1.prems {
+   margin-left:100px;
+}
+div#boiteDefil div {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:11px;
+   color:#000;
+   text-transform:uppercase;
+   white-space:nowrap; 
+   display:block;
+   float:left;
+   margin-top:16px;
+}
+div#prog {
+   margin:4px 0px;
+   /*width:457px;*/
+   /*width:634px;*/
+   position:relative;
+   float:left;
+}
+.homeSport div#prog {width:457px;}
+.conteneurHome div#prog {
+   margin:4px 0px 8px 0px;
+   width:457px;
+}
+.conteneurHome.conteneur_debug_guide_tv div#prog {width:634px;}
+div#prog h2 {
+   background-color: #575857;
+   width: 395px;
+   float: left;
+   height:25px;
+}
+div#prog.PROG {
+   margin:0px 0px 0px 0px;
+}
+img.golfImageEnteteProg2 {
+   width:457px;
+   height:25px;
+}
+.lienPlusEntete, .lienPlusEntete img, img.imageEnteteProg {
+   display:block;
+   float:left;
+}
+.sousConteneurHome .lienPlusEntete {background:#60BEE7;}
+.lienPlusEntete.golfLienPlusEntete {
+   display:block;
+   text-decoration:none;
+   background:#579D1C;
+   width:61px;
+   height:25px;
+}
+.lienPlusEntete.progLienEnteteGauche {
+   display:block;
+   text-decoration:none;
+   background:#579D1C;
+   width:31px;
+   height:30px;
+}
+.lienPlusEntete img, img.imageEnteteProg {
+   margin-bottom:0px;
+}
+
+ul#listeJour { list-style-type:none; width:634px;clear:both;height:40px;}
+ul#listeJour li {
+   display:block;
+   float:left;
+   background:url('http://media.mth.net/sport_plus/images/prog/fond_jour.jpg') repeat-x;
+   text-align:center;
+   height:40px;
+   padding:0px;
+   margin:0px 1px 0px 0px;
+   color:#CCCCCC;
+   text-transform:uppercase;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   font-weight:bold;
+   text-decoration:none;
+   line-height:14px;
+   padding-top:7px;
+}
+ul#listeJour li.lundi { width:62px; }
+ul#listeJour li.mardi { width:86px; }
+ul#listeJour li.mercredi { width:106px; }
+ul#listeJour li.jeudi { width:82px; }
+ul#listeJour li.vendredi { width:108px; }
+ul#listeJour li.samedi { width:90px; }
+ul#listeJour li.dimanche { width:94px; margin:0px;}
+ul#listeJour li a {
+   color:#CCCCCC;
+   text-transform:uppercase;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   font-weight:bold;
+   text-decoration:none;
+   line-height:14px;
+   display:block;
+   margin:0px auto 0px auto;
+}
+ul#listeJour li.jourSelect a, ul#listeJour li a:hover {
+   color:#60BEE7;
+}
+ul#listeVotre { list-style-type:none; margin:7px 0px;clear:both;}
+ul#listeVotre li {
+   display:inline;
+   border-left:1px solid #454846;
+   padding:0px 19px;
+}
+ul#listeVotre li.first {
+   border-left:0px;
+}
+
+ul#listeVotre li a {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#ACA9A9;
+   text-decoration:none;
+}
+ul#listeVotre li.votreSelect a, ul#listeVotre li a:hover {
+   color:#60BEE7;
+}
+div#conteneurASC {
+   position:relative;
+   clear:both;
+   height:296px;
+   overflow:auto;
+}
+.contenuHome div#conteneurASC {
+   height: 415px;
+}
+.debug_programmes div#conteneurASC {
+   height:496px;
+}
+div#conteneurASC2 {
+   position:relative;
+   margin-top:1px;
+   clear:both;
+   height:210px;
+   overflow:auto;
+}
+div#conteneurASC.homeSportConteneurASC { height:265px; }
+div.PROG div#conteneurASC { height:797px;}
+div#conteneurASC ul, div#conteneurASC2 ul {list-style-type:none; float:left;}
+
+div#classementGolf {
+   margin-top:20px;
+   float:left;
+   margin-bottom:20px;
+}
+div#classementGolf div.debug.homeSportDebug h2 {
+   position:relative;
+   width:100%;
+   height:25px;
+}
+span.dateClassement {
+   position:absolute;
+   top:6px;
+   right:10px;
+   width:100px;
+   text-align:right;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:9px;
+   text-transform:uppercase;
+   color:#FFF;
+}
+div#conteneurASC2 li {
+   height:20px;
+   float:left;
+   margin-bottom:1px;
+}
+div#conteneurASC2 div {
+   float:left;
+}
+div#conteneurASC2 li div {
+   background:#353736;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#FFF;
+   height:17px;
+   text-align:center;
+   padding-top:3px;
+}
+div#conteneurASC2 li.impaire div {
+   background:#474A48;
+}
+div#conteneurASC2 li.numberOne div {
+   background:#579D1C;
+}
+div.numClassement {
+   width:62px;
+   margin-right:1px;
+}
+div#conteneurASC2 li div.nomClassement {
+   width:321px;
+   margin-right:1px;
+   text-align:left;
+   padding-left:10px;
+}
+div.val1 {
+   width:80px;
+   margin-right:1px;
+}
+div.val2 {
+   width:79px;
+   margin-right:1px;
+}
+div.val3 {
+   width:67px;
+}
+
+
+
+
+div.debug {
+   height:25px;
+   margin-bottom:1px;
+   clear:both;
+}
+div.debug.homeSportDebug { height:25px; }
+div.debug.progDebug { height:30px; }
+div.debug.progDebug img {
+   display:block;
+   float:left;
+}
+div.debug.progDebug h2 img {width:572px;}
+li.ligneProg {
+   float:left;
+   position:relative;
+   width:100%;
+   padding:0px;
+   list-style-type:none;
+}
+li.ligneProg div.noProg{
+   background:#000000 url(http://media.mth.net/sport_plus/images/fond_ligne.jpg) repeat-x scroll 0 0;
+   color:#FFFFFF;
+   font-family:Verdana;
+   font-size:10px;
+   height:60px;
+   padding:10px;
+}
+div.heureProg {
+   background:url('http://media.mth.net/sport_plus/images/fond_heure.jpg') repeat-x #234554;
+   width:62px;
+   height:38px;
+   float:left;
+   color:#FFF;
+   text-align:center;
+   padding-top:17px;
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:20px;
+}
+div.heureProg  img {
+   margin: 0 auto;
+}
+.progConteneurASC div.heureProg {
+   height:49px;
+}
+
+div.heureProgSprt {
+   background:url('http://media.mth.net/sport_plus/images/fond_heure.jpg') repeat-x #234554;
+   width:62px;
+   height:45px;
+   float:left;
+   color:#FFF;
+   text-align:center;
+   padding-top:10px;
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:13px;
+}
+
+#prog div.Sports_USHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-us.jpg') repeat-x #234554;
+}
+#prog div.Sports_USHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-us.jpg') repeat-x #234554;
+}
+
+#prog div.HockeyHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-us.jpg') repeat-x #234554;
+}
+#prog div.HockeyHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-us.jpg') repeat-x #234554;
+}
+
+#prog div.LigueMagnusHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-us.jpg') repeat-x #234554;
+}
+
+#prog div.BasketHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/basket.jpg') repeat-x #234554;
+}
+div.contenuProg.BasketHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/basket.jpg') repeat-x #234554;
+}
+
+
+#prog div.HandHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/hand.jpg') repeat-x #234554;
+}
+div.contenuProg.HandHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/hand.jpg') repeat-x #234554;
+}
+
+
+
+#prog div.FootHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/foot.jpg') repeat-x #234554;
+}
+div.contenuProg.FootHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/foot.jpg') repeat-x #234554;
+}
+
+
+
+#prog div.GolfHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/golf.jpg') repeat-x #234554;
+}
+div.contenuProg.GolfHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/golf.jpg') repeat-x #234554;
+}
+
+
+
+#prog div.TennisHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/tennis.jpg') repeat-x #234554;
+}
+div.contenuProg.TennisHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/tennis.jpg') repeat-x #234554;
+}
+
+
+
+#prog div.RugbyHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/rugby.jpg') repeat-x #234554;
+}
+div.contenuProg.RugbyHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/rugby.jpg') repeat-x #234554;
+}
+
+
+
+#prog div.VolleyHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/volley.jpg') repeat-x #234554;
+}
+div.contenuProg.VolleyHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/volley.jpg') repeat-x #234554;
+}
+
+
+
+
+
+
+#prog div.Sports_de_glisseHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-glisse.jpg') repeat-x #234554;
+}
+
+
+div.contenuProg.Sports_de_glisseHeureBloc {
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-glisse.jpg') repeat-x #234554;
+}
+
+
+
+
+#prog div.TriathlonHeureBloc {
+   /*background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-glisse.jpg') repeat-x #234554;*/
+   background:url('http://media.mth.net/sport_plus/images/fond_heure.jpg') repeat-x #234554;
+}
+div.contenuProg.TriathlonHeureBloc{
+   background:url('http://media.mth.net/sport_plus/images/disciplines/fond_heures/sports-glisse.jpg') repeat-x #234554;
+}
+
+div#conteneurASC div.heureProg.heureProg2 {
+   font-size:10px;
+   padding-top:15px;
+   height:44px;
+   padding-bottom:0px;
+   background:url('http://media.mth.net/sport_plus/images/fond_ligne.jpg') repeat-x #000;
+}
+div#prog div#conteneurASC div.selectHeureProg, div#prog div#conteneurASC div.selectGolf, div#prog div#conteneurASC div.golf.select {
+   background:url('http://media.mth.net/sport_plus/images/fond_select_golf.jpg') repeat-x #000;
+}
+div#conteneurASC div.selectGolf div {
+   color:#FFF;
+}
+div#conteneurASC div.selectProg {
+   background:url('http://media.mth.net/sport_plus/images/fond_prog_courant.jpg') repeat-x #000;
+   color:#FFF;
+}
+div#conteneurASC.progConteneurASC div.selectProg {
+   background:url('http://media.mth.net/sport_plus/images/fond_prog_courant.jpg') repeat-x #224352;
+}
+div#conteneurASC div.selectProg div {
+   color:#FFF;
+}
+div.heureProg.golfHeureProg {
+   background:url('http://media.mth.net/sport_plus/images/fond_select_golf.jpg') repeat-x #254416;
+   width:61px;
+}
+div#prog div#conteneurASC div.select {
+   background:url('http://media.mth.net/sport_plus/images/fond_prog_courant.jpg') repeat-x #000;
+   color:#FFF;
+}
+div.contenuProg {
+   float:left;
+   width:375px;
+   height:55px;
+   background:url('http://media.mth.net/sport_plus/images/fond_ligne.jpg') repeat-x #000;
+   overflow:hidden;
+}
+.conteneurHome div.contenuProg {
+   width: 378px;
+   margin-left: 0;
+}
+.conteneurHome .programmationContenu div.contenuProg {width: 555px;}
+.progConteneurASC div.contenuProg {
+   height:66px;
+   overflow: hidden;
+}
+div.contenuProg.golf2 {
+   float:left;
+   width:404px;
+   height:59px;
+   margin:0px 1px;
+}
+div.vainqueur {
+   width:199px;
+   float:left;
+   background:url('http://media.mth.net/sport_plus/images/fond_ligne.jpg') repeat-x #000;
+   height:59px;
+}
+div#conteneurASC li.ligneProg div.vainqueur{ height:59px; }
+div.vainqueur h3 {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   margin:8px 10px 1px 10px;
+}
+div.vainqueur p.tresImportant {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#68A733;
+   margin:0px 10px;
+}
+div.vainqueur a.lienLigneResultat {
+   display:block;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:normal;
+   font-size:10px;
+   color:#FFF;
+   margin:0px 10px;
+   text-decoration:none;
+}
+div.contenuProg.golf2 p {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   margin-left:10px;
+   color:#FFF;
+}
+div.contenuProg.golf2 p.tresImportant{ color:#68A733;}
+li.ligneProg div.select div {
+   color:#FFF;
+}
+div.contenuProg h3 {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   margin:4px 10px 1px 10px;
+   text-transform:uppercase;
+}
+div#selectdProgramm.contenuProg h3 {color:#fff;}
+div.contenuProg.golf2 h3 {
+   margin:8px 10px 1px 10px;
+   text-transform:capitalize;
+}
+div.holderVideo {
+   /*margin-right:14px;*/
+   width:298px;
+   margin-bottom:0px;
+   border:1px solid #7B7B7B;
+}
+.homeSport div.holderVideo,.conteneurTournoi div.holderVideo {
+   margin-bottom:20px;
+}
+div.jScrollPaneContainer{
+
+}
+
+div.contenuProg div {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:normal;
+   font-size:10px;
+   color:#C4BABA;
+   line-height:11px;
+   margin:0px 10px;
+}
+
+a.lienSousTableau {
+   position:relative;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#000;
+   display:block;
+   margin-top:1px;
+   text-decoration:none;
+   padding-right:120px;
+   padding-top:6px;
+   height:19px;
+   text-align:right;
+   float:left;
+   width:515px;
+   margin-bottom:0px;
+   background:#579D1C;
+   height:38px;
+   overflow:hidden;
+}
+
+a.lienSousTableauBasket { background:#FF8D3D;}
+a.lienSousTableauHand { background:#4F8BCA;}
+a.lienSousTableauFoot { background:#7ABD5E;}
+a.lienSousTableauGolf { background:#198A5F;}
+a.lienSousTableauTennis { background:#D7B53B;}
+a.lienSousTableauRugby { background:#E4322D;}
+a.lienSousTableauVolley { background:#D74398;}
+a.lienSousTableauSportsUS { background:#A454C6;}
+a.lienSousTableauSportsdeglisse { background:#A88766;}
+a.lienSousTableauAutres { background:#60BEE7; }
+
+span.plusLien {
+   font-size:20px;
+   font-weight:bold;
+   color:#FFF;
+   position:absolute;
+   top:-2px;
+   left:83px;
+}
+span.plusLien2 {
+   font-size:20px;
+   font-weight:bold;
+   color:#FFF;
+   position:absolute;
+   top:-2px;
+   left:144px;
+}
+a.lienSousTableau img {
+   position:absolute;
+   top:4px;
+   left:524px;
+}
+h3.couleur0 { color:#FFF; }
+h3.couleur1 { color:#FFAD00; }
+h3.couleur2 { color:#3286B3; }
+h3.couleur3 { color:#7EBE48; }
+h3.couleur4 { color:#579D1C; }
+h3.couleur5 { color:#1667A8; }
+h3.couleur6 { color:#9B73A9; }
+h3.couleur7 { color:#FF8D3D; }
+h3.couleur8 { color:#4CA2F7; }
+
+.contenuProg h3, h3.couleurAutre { color:#60BEE7; }
+.conteneurBasket .contenuProg h3, h3.couleurBASKETBALL { color:#FF8D3D; }
+.conteneurHand .contenuProg h3, h3.couleurHANDBALL { color:#4F8BCA; }
+.conteneurFoot .contenuProg h3, h3.couleurFOOTBALL { color:#7ABD5E; }
+.conteneurGolf .contenuProg h3, h3.couleurGOLF { color:#198A5F; }
+.conteneurTennis .contenuProg h3, h3.couleurTENNIS { color:#D7B53B; }
+.conteneurRugby .contenuProg h3, h3.couleurRUGBY{ color:#E4322D; }
+.conteneurVolley .contenuProg h3, h3.couleurVOLLEY{ color:#D74398; }
+.conteneurSportsUS .contenuProg h3, h3.couleurSPORTSUS { color:#A454C6; }
+.conteneurHockey .contenuProg h3, h3.couleurHOCKEY { color:#A454C6; }
+.conteneurLigueMagnus .contenuProg h3, h3.couleurLIGUEMAGNUS { color:#A454C6; }
+.conteneurSportsdeglisse .contenuProg h3, h3.couleurGLISSE { color:#A88766; }
+
+div#miseAvant {
+   position:relative;
+   width:635px;
+   height:284px;
+   clear:both;
+}
+
+
+div#miseAvant ul li.lienMiseAvantSPE { margin-right:0px; }
+a.lienMiseAvant {
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:12px;
+   text-decoration:none;
+   cursor:hand;
+}
+
+a.golfLienMiseAvant {
+   font-family:Arial, sans-serif;
+   font-weight:bold;
+   font-size:12px;
+   text-decoration:none;
+   float:left;
+   width:211px;
+   display:block;
+   margin:0px;
+   padding:0px;
+}
+
+span.titre1, span.titre2 {
+   position:absolute;
+   left:9px;
+   cursor:hand;
+   font-size:12px;
+}
+span.titre1 { bottom:23px; }
+span.golfTitre1 {
+   top:87px;
+   z-index:10;
+}
+span.titre2 { bottom:8px; color:#FFF; }
+span.couleurAvant1 { color:#B8DA45; }
+span.couleurAvant2 { color:#DCC4DB; }
+span.couleurAvant3 { color:#97D8FB; }
+span.couleurAvant4 { color:#F5D15D; }
+span.couleurAvant5 { color:#FFF; }
+
+span.couleurAvantBasket { color:#FFBC8F; }
+span.couleurAvantHand { color:#80CCFF; }
+span.couleurAvantFoot { color:#B2FF91; }
+span.couleurAvantGolf { color:#45DA7D; }
+span.couleurAvantTennis { color:#FAF6A2; }
+span.couleurAvantRugby { color:#FF9791; }
+span.couleurAvantVolley { color:#F7C2E7; }
+span.couleurAvantSportsUS { color:#E9B5FF; }
+span.couleurAvantSportsdeglisse { color:#D6C18B; }
+span.couleurAvantAutres { color:#4CE4FF; }
+span.couleurAvantTriathlon { color:#4CE4FF; }
+
+span.textMiseAvant {
+   float:left;
+display:block;
+   margin-top:10px;
+   padding:2px 10px;
+   width:190px;
+
+   color:#CCC;
+   font-weight:normal;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   border-right:1px solid #525352;
+   cursor:hand;
+}
+span.textMiseAvantSPE {
+   border:0px;
+}
+div#ColonneVideos {
+   width:316px;
+   margin-left:1px;
+   padding-left:18px;
+   float:left;
+   padding-top:11px;
+   background:url('http://media.mth.net/sport_plus/images/fond.jpg') no-repeat -646px -80px;
+}
+.conteneurHome div#ColonneVideos {
+   background:url('http://media.mth.net/sport_plus/images/home/fond-col-droite.jpg') no-repeat -646px -80px;
+   margin-top:4px;
+}
+
+div#ColonneVideosGoodies {
+   width:316px; 
+   margin-left:1px;
+   margin-right:0px;
+   padding-left:18px;
+   float:left;
+   margin-top:0px;
+   padding-top:7px;
+   height:1028px;
+/* background:url('http://media.mth.net/sport_plus/images/goodies/fond.jpg') -646px 0px no-repeat;*/
+   background:url('http://media.mth.net/sport_plus/images/fond.jpg') -646px -76px no-repeat;
+   overflow: hidden;
+}
+.homeSport div#ColonneVideosGoodies {
+   background-position: -646px -80px;
+   margin-top: 3px;
+   padding-top:4px;
+}
+.conteneurTournoi div#ColonneVideosGoodies {height:1036px;}
+div#ColonneVideosVideos {
+   width:301px;
+   margin-left:0px;
+   padding-left:21px;
+   padding-top:26px;
+   padding-right:13px;
+   float:left;margin-top:4px;
+min-height:744px;
+   background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') -645px -145px no-repeat;   
+/* background:url('http://media.mth.net/sport_plus/images/videos/fond_2.jpg') no-repeat -10px -145px;*/
+}
+div#ColonneVideosVideos h2, div.conteneurGoodies h1 {
+   border-bottom:1px solid #454846;
+   padding-bottom:18px;
+   margin-bottom:16px;
+}
+div#conteneurFormVideos {
+   margin-bottom:18px;
+   padding-bottom:19px;
+   position:relative;
+   border-bottom:1px solid #454846;
+   height:42px;
+}
+
+input.champTextVideos {
+   border:1px solid #D0D0D0;
+   width:200px;
+   height:15px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   color:#000;
+   margin-bottom:8px;
+   float:left;
+   display:block;
+   padding-left:3px;
+}
+select.champSelectVideo {
+   width:205px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   color:#000;
+   margin-right:15px;
+   float:left;
+}
+input.boutonRechercher {
+   width:77px;
+   height:17px;
+   background:url('http://media.mth.net/sport_plus/images/videos/rechercher.jpg') no-repeat;
+   border:0px;
+   cursor:hand;
+   float:left;
+}
+div#flashobj {
+   background:#000;
+   width:300px;
+   height:213px;
+   color:#FFF;
+   margin-bottom:0px;
+}
+div#sousConteneurSport div.conteneurGoodies ul {
+   display:block;
+   width:593px;
+   padding:0px;
+   margin:0px;
+}
+div.conteneurConcours h1, div.conteneurChaine h1, div.conteneurMentions h1, div.conteneurPresse h1/*, div.conteneurRecevoir*/, div.programmationContenu h1, .conteneurRecevoir h1 {
+   padding-bottom:15px;
+   margin-bottom:15px;
+   border-bottom:1px solid #454846;
+}
+.conteneurRecevoir h1 {
+   padding-bottom:11px;
+}
+div.programmationContenu h1 {margin-left:20px;margin-right:20px;}
+
+
+div.conteneurConcours h2 {
+   float:left;
+   margin-bottom:25px;
+}
+div.conteneurConcours div.jeu {
+   border-bottom:1px solid #454846;
+   margin-bottom:30px;
+   clear:both;
+}
+
+div.conteneurConcours div.jeu div.result {
+width:100%;
+height:100px;
+   margin-bottom:30px;
+   clear:both;
+}
+div.footerJeu {
+   clear:both;
+   width:100%;
+   height:30px;
+   position:relative;
+}
+div.conteneurConcours div.jeu img {
+   display:block;
+   float:left;
+   margin-right:15px;
+   margin-bottom:10px;
+}
+div.conteneurConcours div.jeu p {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   float:left;
+   width:400px;
+}
+div.conteneurConcours div.jeu a {
+   display:block;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   font-weight:bold;
+   text-decoration:none;
+}
+div.jeu a.lienParticiper {
+   margin-top:20px;
+   margin-bottom:4px;
+}
+span.superImportant {
+   text-transform:uppercase;
+   color:#60BEE7;
+   font-weight:bold;
+}
+div.conteneurConcours ul { list-style:none; clear:both; float:left; width:100%;}
+div.conteneurConcours li {
+   width:145px;
+   float:left;
+   margin-right:78px;
+   margin-bottom:20px;
+}
+div.conteneurConcours li.retourLigne { margin-right:0px;}
+div.conteneurConcours li p {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   color:#fff;
+   margin-top:5px;
+   margin-bottom:5px;
+}
+div.conteneurChaine p {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:bold;
+   color:#60BEE7;
+   text-align:justify;
+   margin-bottom:48px;
+}
+div.conteneurChaine p span {
+   color:#fff;
+}
+div.conteneurChaine ul {
+   list-style:none;
+   text-align:center;
+   height:13px;
+   margin-bottom:10px;font-size:11px;
+}
+div.conteneurChaine li {
+   float:left;
+   border-right:1px solid #fff;
+   padding:0px 11px;
+}
+div.conteneurChaine li.dernier {
+   border:0px;
+}
+div.conteneurChaine li a {
+   display:block;
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:9px;
+   color:#fff;
+   text-decoration:none;
+}
+div.conteneurChaine li a span {color:#60BEE7;}
+a.lienAbo { margin-bottom:30px; }
+a.lienAbo, a.lienAbo img {
+   display:block;
+}
+div.imageDeco {
+   width:145px;
+   float:left;
+   margin-right:20px;
+}
+div.imageDeco img {
+   display:block;
+   float:left;
+   margin-bottom:15px;
+}
+div.imageDeco img.derniere {
+   margin-bottom:0px;
+}
+div.TAILLEcontenuChaine { height:405px; }
+div.contenuChaine p {
+   width:427px;
+   text-align:justify;
+   color:#fff;
+   font-weight:normal;
+   float:left;
+}
+a.voirLesResultats {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   color:#fff;
+   font-weight:bold;
+   text-decoration:none;
+}
+div.conteneurConcours li p span.unPeuImportant {
+   color:#60BEE7;
+   font-weight:bold;
+}
+div.footerConcours {
+   background:blue;
+   width:100%;
+   height:0px;
+   line-height:0px;
+   float:left;
+   clear:both;
+}
+
+div#ColonneVideos.golfColonneVideos {
+   margin-top:4px;
+}
+div#conteneur div#sousConteneurSport div#ColonneVideos.progColonneVideos {
+   background:url('http://media.mth.net/sport_plus/images/fond_programmation.jpg') no-repeat right -141px;
+   padding-top:4px;
+   margin:0px;
+}
+div#pubCarre {
+   border:0px solid #7A7B7A;
+   height:250px;
+   margin-bottom:21px;
+   background:#7A7B7A;
+   width:300px;
+}
+
+div#ColonneVideosGoodies div#pubCarre{
+   margin-top:8px;
+}
+div#player {
+   height:213px;
+   background:#111;
+   color:#FFF;
+   margin-bottom:8px;
+   width:300px;
+}
+div#playerGOLF {
+   height:213px;
+   background:#000;
+   color:#FFF;
+   margin-top:14px;
+   margin-bottom:8px;
+   width:300px;
+}
+div#videos {
+   /*height:244px;*/
+   height:238px;
+   overflow:auto;
+}
+div#videos a.lienVideos {
+   display:block;
+   float:left;
+   clear:both;
+   color:#DFDFDF;
+   text-decoration:none;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   padding:5px 0px;
+   margin-right:0px;
+   border-bottom:1px solid #7A7B7A;
+   height:50px;
+   width:100%;
+   position:relative;
+}
+div#videos a.lienVideos img.imageListeVideos {
+   display:block;
+   float:left;
+   margin-right:10px;
+}
+div#videos a.lienVideos  span.titre3 {
+   font-weight:bold;
+   display:block;
+   text-decoration:none;
+   color:#DFDFDF;
+}
+div#videos ul {
+   list-style-type:none;
+   float:left;
+}
+div#videos ul li {
+   display:block;
+   float:left;
+   margin:0px;
+   padding:0px;
+   width:280px;
+}
+ul#listePubCanal {
+   list-style-type:none;
+   float:left;
+}
+ul#listePubCanal li {
+   display:block;
+   float:left;
+}
+
+li.lienCanal1 { margin-top:17px; margin-bottom:0px; }
+li.lienCanal1 a#overa,li.lienCanal1 img#over{ position:absolute;width:300px;height:250px;}
+.homeSport li.lienCanal1, .conteneurTournoi li.lienCanal1 { margin-top:0px; margin-bottom:0px; }
+li.lienCanal2 { margin-right:9px; padding-bottom:10px; }
+li.lienCanal2 { margin:0px; }
+li.lienCanal3 { margin:0px; }
+ul#listePubCanal li a {
+   display:block;
+}
+ul#listePubCanal li a img {
+   display:block;
+}
+div#piedPage {
+   float:left;
+   width:100%;
+   text-align:right;
+   padding-top:9px;
+   padding-bottom:10px;
+   background:#000;
+   position:relative;
+}
+div#piedPage.piedPageHomeSport {
+   margin-top:15px;
+   position:relative;
+   left:-22px;
+   padding:0px;
+}
+div#piedPage.piedPageHomeSport ul {
+   background:#000;
+   position:relative;
+   right:-22px;
+   height:20px;
+   padding-top:10px;
+   display:block;
+}
+div#piedPage.piedPageHome {
+   margin-top:11px;
+}
+div#piedPage.golfPiedPage { margin-top:19px; }
+div#piedPage.result_golfPiedPage { margin-top:0px; }
+
+div#piedPage ul {
+   float:right;
+}
+div#piedPage ul li {
+   display:block;
+   float:left;
+   padding:0px 7px;
+   border-right:1px solid #929292;
+   line-height:12px;
+   color:#929292;
+   font-size:9px;
+}
+div#piedPage ul li.dernierListePied { border:0px; }
+div#piedPage ul li a {
+   position:relative;
+   top:-1px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   text-decoration:none;
+   color:#929292;
+}
+div#piedPage ul li {
+   position:relative;
+   top:-1px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   color:#929292;
+}
+div#piedPage #fond_pied_de_page {position:absolute;top:0px;left:-100px;width:223px;height:60px;background:#000;color:#000;z-index:100;}
+#conteneurASC table {
+   background:#555;
+   width:100%;
+   padding:0px;
+   border-collapse: collapse;
+}
+#conteneurASC td {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   height:59px;
+}
+td.tableJour {
+   color:#fff;
+   text-align:center;
+   width:62px;
+}
+#conteneurASC tr td {
+   background:url('http://media.mth.net/sport_plus/images/fond_ligne.jpg') repeat-x;
+}
+#conteneurASC tr.tableSelect td {
+   background:url('http://media.mth.net/sport_plus/images/fond_select_golf.jpg') repeat-x;
+}
+td.tableJour, td.tableContenu1, td.tableContenu2 {
+   border-right:1px solid #000;
+   border-bottom:1px solid #000;
+}
+td.tableContenu1  {
+   width:350px;
+   padding-left:10px;
+}
+td.tableContenu2 {
+   padding-left:10px;
+}
+.tableContenu1 h3, .tableContenu2 h3 {
+   font-size:11px;
+}
+.tableContenu1 p.tresImportant, .tableContenu2 p.tresImportant {
+   color:#68A733;
+}
+.tableContenu1 p, .tableContenu2 p {
+   color:#fff;
+}
+.tableContenu2 a.lienLigneResultat {
+   color:#fff;
+   text-decoration:none;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+}
+.tableContenu2 a.lienLigneResultat:hover {
+   text-decoration:underline;
+}
+
+#conteneurASC2 table {
+   width:100%;
+   background:#353736;
+   padding:0px;
+   border-collapse: collapse;
+   color:#fff;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   font-weight:bold;
+}
+#conteneurASC2 td {
+   height:20px;
+   border-right:1px solid #000;
+   border-bottom:1px solid #000;
+}
+tr.table2Select {
+   background:#579D1C;
+}
+tr.table2couleur {
+   background:#474A48;
+}
+td.tableClassement {
+   width:62px;
+   text-align:center;
+}
+td.tableIntitule {
+   padding-left:13px;
+}
+td.tableLargFixe {
+   width:79px;
+   text-align:center;
+}
+span.intitulePage {
+   float:left;
+   margin-right:4px;
+}
+
+/* ///////////////////////////////////////// AJOUT du 08/04/2008 /////////////////////////////////// */
+
+.conteneurMentions, .conteneurEdito p {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   text-align:justify;
+}
+
+.conteneurEdito div {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   text-align:justify;
+}
+.conteneurEdito div.contenuEdito {padding:20px 20px 0px;}
+.conteneurMentions .intitule , .conteneurEdito .initule{
+   color:#60BEE7;
+   font-weight:bold;
+}
+.conteneurPresse ul {
+   list-style:none;
+}
+.conteneurRecevoir .para_recevoir, .conteneurEdito .para_recevoir{
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   border-bottom:1px solid #454846;
+   padding-bottom:44px;
+   margin-bottom:22px;
+}
+.conteneurRecevoir .para_recevoir.dernier {margin-bottom:0px; padding-bottom:0px;}
+.conteneurPresse li {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   border-bottom:1px solid #454846;
+   padding-bottom:14px;
+   margin-bottom:22px;
+}
+.conteneurRecevoir .para_recevoir , .conteneurEDito .para_recevoir { padding-bottom:20px; }
+.conteneurRecevoir .para_recevoir.prems , .conteneurEDito .para_recevoir { padding-bottom:135px; }
+.conteneurRecevoir .para_recevoir.dernier , .conteneurEDito .para_recevoir {
+   border:0px;
+}
+para_recevoir.dernier {padding-bottom:0px; margin-bottom:0px;}
+.align_1{padding-top:29px;}
+.align_2{padding-top:46px;}
+.align_3{padding-top:44px;}
+.align_4{padding-top:15px;}
+.align_5{padding-top:0px;}
+.align_6{padding-top:46px;}
+.align_7{padding-top:0px;}
+.align_8{padding-top:39px;}
+.align_9{padding-top:22px;}
+.align_10{padding-top:45px;}
+.align_11{padding-top:0px;}
+.align_12{padding-top:0px;}
+div.block_satellite ul {
+   margin-top:30px;
+}
+.para_recevoir .intitule {
+   font-weight:bold;
+   font-size:11px;
+   text-transform:uppercase;
+   color:#60BEE7;
+}
+.para_recevoir ul {list-style:none;height:70px; width:584px;}
+.para_recevoir li {
+   float:left;
+   }
+.para_recevoir li.dernier {
+   margin-right:0px;
+}
+.conteneurPresse li.dernier {
+   border:0px;
+}
+.conteneurPresse li .intitule {
+   color:#60BEE7;
+   font-weight:bold;
+   text-transform:uppercase;
+}
+.conteneurPresse li a {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#fff;
+   text-decoration:none;
+   display:block;
+   margin:15px 0px 0px 400px;
+   height:15px;
+   background:url('http://media.mth.net/sport_plus/images/presse/telecharger.jpg') no-repeat 0px 0px;
+   padding-left:20px;
+}
+.conteneurPresse li a:hover {color:#60BEE7;}
+
+.holder_presse {
+   width:100%;
+   height:567px;
+}
+#asc_presse {
+   height:567px;
+   overflow:auto;
+}
+.holder_partenaires {
+   width:100%;
+   /*height:691px;*/
+   height:580px;
+}
+.et_finalement_c_est_fiche_agenda .holder_partenaires {height:auto;}
+#asc_presse.asc_partenaires {
+   /*height:711px;*/
+   height:595px;
+}
+.et_finalement_c_est_fiche_agenda #asc_presse.asc_partenaires {height:800px;}
+.mais_en_vrai_c_est_le_conteneurPartenaires li {
+   margin-top:15px;
+   height:97px;
+   padding:0px;
+   border-bottom:1px solid #454846;
+   position:relative;
+padding-bottom:15px;
+}
+.mais_en_vrai_c_est_le_conteneurPartenaires li p {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#fff;
+   height:15px;
+   position:absolute;
+   top:0px;
+   left:82px;
+}
+
+.mais_en_vrai_c_est_le_conteneurPartenaires li p span {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#fff;
+   height:15px;
+   display:block;
+}
+
+.conteneurPresse.mais_en_fait_c_est_le_conteneurSites li a.lien_logo_sites {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#fff;
+   text-decoration:none;
+   display:inline;
+   float:none;
+   height:auto;
+   background:none;
+   padding-left:0px;
+   margin-top:0px;
+}
+.conteneurPresse.mais_en_fait_c_est_le_conteneurSites li a {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#fff;
+   text-decoration:none;
+   display:block;
+   height:15px;
+   background:none;
+   padding-left:0px;
+   margin-top:0px;
+   margin-left:500px;
+}
+.conteneurPresse.mais_en_vrai_c_est_le_conteneurPartenaires li a {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#fff;
+   text-decoration:none;
+   display:block;
+   float:none;
+   clear:none;
+   height:15px;
+   background:none;
+   padding-left:0px;
+   margin-top:0px;
+   position:absolute;
+   right:1px;
+}
+.conteneurPresse.mais_en_vrai_c_est_le_conteneurPartenaires li a.lien_en_savoir_plus{top:80px;}
+.conteneurPresse.mais_en_vrai_c_est_le_conteneurPartenaires li a.lien_visitez_le_site {top:95px;}
+.conteneurPresse.mais_en_vrai_c_est_le_conteneurPartenaires li a.lien_maximise {
+   float:left;
+   margin:0px;
+   padding-left:48px;
+   display:block;
+   clear:none;
+   height:90px;
+   padding-left:0px;
+   margin-top:0px;
+   position:static;
+   right:0px;
+   width:62px;
+}
+.conteneurPresse.mais_en_vrai_c_est_le_conteneurPartenaires li a.lien_maximise img {
+   display:block;
+}
+p.intitule {
+   float:left;
+   width:408px;
+   text-align:justify;
+}
+div.conteneurPresse h2 {
+   margin-bottom:55px;
+}
+div.conteneurPresse.mais_en_vrai_c_est_le_conteneurPartenaires h2 {margin-bottom:20px;}
+.contenu_fiche {
+   border-bottom:1px solid #454846;
+   padding-bottom:28px;
+}
+.contenu_fiche img {
+   float:left;
+   margin-right:15px;
+   margin-bottom:23px;
+}
+.contenu_fiche p.intitule {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:bold;
+   color:#60BEE7;
+   text-transform:uppercase;
+   float:left;
+   width:296px;
+   margin-bottom:14px;
+   text-align:justify;
+}
+
+p.PartnerTitle{
+   font-family:Verdana, Arial, sans-serif;
+   font-size:13px;
+   font-weight:bold;
+   color:White;
+   margin-bottom:10px;
+}
+.contenu_fiche .info_suite {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   float:left;
+   width:296px;
+   text-align:justify;
+}
+.boite_lien_tous_les_renseignements {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+   text-align:right;
+   clear:both;
+}
+.mais_en_vrai_c_est_le_conteneurPartenaires_fiche .boite_lien_tous_les_renseignements a {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:10px;
+   color:#60BEE7;
+   text-decoration:none;
+   line-height:20px;
+   margin-top:0px;
+   display:inline;
+}
+.mais_en_vrai_c_est_le_conteneurPartenaires_fiche a {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   font-size:11px;
+   color:#fff;
+   text-decoration:none;
+   display:block;
+   margin-top:12px;
+}
+.oula_attention {
+   font-family:Arial, sans-serif;
+   font-size:12px;
+   font-weight:normal;
+   color:#fff;
+   border:1px solid #474747;
+   padding:8px;
+   margin:0px;
+   line-height:16px;
+}
+.oula_attention .phrase_attention { color:#BABABA; }
+#sousConteneurSport .mais_en_vrai_c_est_le_conteneurInsc_nl h2 {
+   margin-bottom:25px;
+}
+.merci {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:bold;
+   text-transform:uppercase;
+   color:#60BEE7;
+   margin-top:36px;
+   margin-bottom:16px;
+}
+.mais_en_vrai_c_est_le_conteneurInsc_nl label, .mais_en_vrai_c_est_le_conteneurInsc_nl .label {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:12px;
+   font-weight:bold;
+   color:#fff;
+   display:block;
+   width:151px;
+   height:16px;
+   float:left;
+   margin-bottom:9px;
+}
+.mais_en_vrai_c_est_le_conteneurInsc_nl select {
+   height:16px;
+}
+#select_insc_1, #select_insc_2 { width:49px; margin:0px 10px 0px 0px; }
+#select_insc_3 { width:96px; }
+#mail, #nom, #prenom, #code_postal, #ville, #pays, #telephone, #boite_civ {
+   display:block;
+   width:220px;
+   height:16px;
+   float:left;
+   margin-right:200px;
+   margin-bottom:9px;
+   position:relative;
+   z-index:1;
+   top:-2px;
+}
+#boite_naissance {
+   display:block;
+   width:320px;
+   height:18px;
+   float:left;
+   margin-right:100px;
+   margin-bottom:9px;
+   position:relative;
+   top:-2px;
+}
+#adresse {
+   display:block;
+   width:440px;
+   height:18px;
+   float:left;
+   margin-right:0px;
+   margin-bottom:9px;
+   position:relative;
+   top:-2px;
+}
+.mais_en_vrai_c_est_le_conteneurInsc_nl #boite_civ label, .mais_en_vrai_c_est_le_conteneurInsc_nl #boite_civ input {
+   width:auto;
+   float:left;
+   margin:0px;
+   display:block;
+}
+.mais_en_vrai_c_est_le_conteneurInsc_nl #boite_civ label {height:16px; }
+.mais_en_vrai_c_est_le_conteneurInsc_nl #boite_civ input {width:20px; height:16px;}
+
+#demande_infos {
+   float:left;
+   border-top:1px solid #464847;
+   border-bottom:1px solid #464847;
+   margin-top:32px;
+   width:100%;
+   height:215px;
+   padding-top:32px;
+}
+.question {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:normal;
+   color:#fff;
+   display:block;
+   float:left;
+   width:480px;
+}
+.question_abo {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:normal;
+   color:#fff;
+   display:block;
+   float:left;
+   width:150px;
+}
+.question_sports {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:normal;
+   color:#fff;
+   display:block;
+   float:left;
+   width:590px;
+   margin-bottom:9px;
+}
+#demande_infos input {
+   width:18px;
+   height:18px;
+   display:block;
+   float:left;
+   position:relative;
+   top:-1px;
+   margin-left:20px;
+}
+#demande_infos #derniere_question input {margin-left:0px;margin-bottom:0px;height:18px;}
+#demande_infos #derniere_question label {margin-right:36px;margin-bottom:0px;height:18px;}
+#demande_infos label {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   font-weight:normal;
+   color:#fff;
+   width:auto;
+}
+#submit_form_insc_nl {
+   float:left;
+   margin-top:28px;
+   padding-bottom:28px;
+   background:url('http://media.mth.net/sport_plus/images/newsletter/fond_bouton.jpg') no-repeat;
+   width:70px;
+   height:50px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   font-weight:bold;
+   color:#000;
+   border:0px;
+   position:relative;
+   left:262px;
+}
+
+.game {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:11px;
+   color:#fff;
+}
+.aucun_retour {
+   font-family:Verdana, Arial, sans-serif;
+   color:#fff;
+   font-size:12px;
+}
+div#conteneur.conteneurConcoursDEBUG {
+   width:982px;
+   padding-left:11px;
+   backgorund:#000;
+}
+div#conteneur.conteneurConcoursDEBUG.debug_video_2 {width:981px;}
+
+
+#DEV {
+   position:absolute;
+   bottom:10px;
+   left:10px;
+   background:#fff;
+   border:1px solid #555;
+   padding:10px;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:12px;
+   color:#000;
+   z-index:200000;
+}
+#DEV a {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:12px;
+   color:#000;
+   z-index:1000;
+}
+#DEV a.new {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:12px;
+   color:red;
+   z-index:1000;
+}
+#DEV a:hover { color:#E00; }
+#DEV ul { display:none;margin-bottom:10px;list-style:none;}
+
+/* ////////////// CSS SCROLL PERSO /////////////// */
+.scrollPerso .jScrollPaneTrack { background: url(http://media.mth.net/sport_plus/images/scroll/asc_fond.jpg) repeat-y;}
+.scrollPerso .jScrollPaneDrag { background: url(http://media.mth.net/sport_plus/images/scroll/asc_barre.jpg) repeat-y; }
+.scrollPerso a.jScrollArrowUp { height: 12px; background: url(http://media.mth.net/sport_plus/images/scroll/asc_haut.jpg) no-repeat; }
+.scrollPerso a.jScrollArrowDown { height: 12px; background: url(http://media.mth.net/sport_plus/images/scroll/asc_bas.jpg) no-repeat; }
+/* /////////// FIN DE CSS SCROLL PERSO //////////// */
+
+/* CSS Hack Safari */
+#dummy {;# }
+
+#boiteDefil {
+overflow: auto;
+}
+
+
+
+
+
+div#prog div.homeSportDebug {
+   background-color: #575857;
+}
+div#classementGolf div.homeSportDebug div{
+position:relative;
+}
+div#classementGolf div.homeSportDebug div p{
+color:#FFFFFF;
+font-family:Arial,sans-serif;
+font-size:15px;
+font-weight:bold;
+left:70px;
+position:absolute;
+top:4px;
+
+}
+div#prog div.homeSportDebug div p{
+color:#FFFFFF;
+font-family:Arial,sans-serif;
+font-size:15px;
+font-weight:bold;
+left:70px;
+position:absolute;
+top:4px;
+
+}
+#image_edito {
+float:left;
+margin-right:14px;
+margin-bottom:14px;
+}
+#nom_propre {
+display:block;
+text-align:right;
+}
+
+
+
+.para_recevoir li.satellite {
+   float:left;
+   padding-right:10px;
+   padding-bottom:10px;
+   padding-left:31px;
+margin-right:0px;
+}
+
+div.block_satellite{
+height:182px;
+}
+
+
+div.block_cable{
+height:182px;
+}
+
+div.block_satellite img.pop{
+margin-left:197px;
+padding-top:5px;
+}
+
+div.block_cable li.link_1{
+padding-left:80px;
+padding-top:10px;
+}
+div.block_cable li.link_2{
+padding-left:80px;
+padding-top:10px;
+}
+div.block_cable li.link_3{
+padding-left:35px;
+padding-top:20px; 
+}
+div.block_cable li.link_4{
+padding-top:20px; 
+padding-left:30px;
+}
+div.block_cable li.link_5{
+padding-top:20px; 
+padding-left:30px;
+}
+div.block_cable li.link_6{
+padding-top:20px; 
+padding-left:30px;
+}
+
+div.block_FAI{
+height:67px;
+}
+div.block_FAI li{
+padding-left:13px;
+}
+div.block_FAI li.link_1{
+padding-top:10px;
+}
+div.block_FAI li.link_2{
+padding-top:30px;
+padding-left:19px;
+}
+div.block_FAI li.link_3{
+padding-top:28px;
+padding-left:19px; 
+}
+div.block_FAI li.link_4{
+padding-top:30px;
+padding-left:19px;
+}
+div.block_FAI li.link_5{
+padding-top:8px;
+padding-left:19px;
+}
+div.block_FAI li.link_6{
+padding-top:15px;
+padding-left:18px;
+}
+
+
+
+
+#mise_en_avant_2 {
+   list-style:none;
+   position:relative;
+   margin:0px;
+   padding:0px;
+   width:635px;
+   height:284px;
+}
+#mise_en_avant_2 li {position:absolute;}
+#mea_1 { top:0px; left:0px;}
+#mea_3 { top:0px; left:233px;}
+#mea_2 { top:145px;  left:0px;}
+
+#mise_en_avant_2 img {display:block;}
+#mise_en_avant_2 #mea_3 .chapeau img {display:inline;}
+#mise_en_avant_2 a, #mise_en_avant_2 {
+   font-family:Verdana, Arial, sans-serif;
+   font-size:10px;
+   color:#fff;
+   text-decoration:none;
+   line-height:16px;
+}
+#mea_1, #mea_2 {width:233px;}
+#mise_en_avant_2 .contenu {
+   display:block;
+   padding:0px 8px;
+   margin-top:9px;
+}
+#mise_en_avant_2 #mea_2 .contenu {
+   height:38px;
+}
+#mise_en_avant_2 #mea_3 .contenu {
+   border-left:1px solid #656665;
+}
+#mise_en_avant_2 .contenuautres {
+   display:block;
+   padding:0px 8px;
+   margin-top:9px;
+}
+
+#mea_3 .rogne {
+   display:block;
+   position: relative;
+   width: 402px;
+   height: 230px;
+   overflow: hidden;
+}
+#mea_3 .rogne img {
+   position: relative;
+   left: 0px;
+   top: -11px;
+}
+#mea_3 .rogne img.png {
+   position:absolute;
+   top:145px;
+   left:0px;
+}
+#mea_3 .titre_1 {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   color:#fff;
+   font-size:12px;
+   display:block;
+   position:absolute;
+   top:155px;
+   left:10px;
+}
+#mea_3 .titre_2 {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:bold;
+   color:#fff;
+   font-size:18px;
+   display:block;
+   position:absolute;
+   top:172px;
+   left:11px;
+}
+#mea_3 .chapeau {
+color:#000000;
+display:block;
+font-family:Verdana,Arial,sans-serif;
+font-size:9px;
+font-weight:bold;
+height:30px;
+padding-right:0px;
+position:absolute;
+text-align:right;
+top:200px;
+width:395px;
+}
+ 
+#mea_3 .chapeau span {
+   font-family:Arial, Verdana, sans-serif;
+   color:#fff;
+   font-weight:bold;
+   font-size:19px;
+   position:relative;
+   top:3px;
+   left:-4px;
+}
+#mea_3 .chapeau img {
+   position:relative;
+   top:4px;
+}
+
+#mea_1 .titre_block_mea, #mea_2 .titre_block_mea {
+   position:absolute;
+   top:67px;
+   left:8px;
+   font-weight:bold;
+   font-size:12px;
+}
+#mea_1 img, #mea_2 img {height:85px;}
+
+
+
+
+
+div#miseAvantHome { clear:both; margin-bottom:15px; height:190px;}
+div#miseAvantHome ul { list-style-type:none;}
+div#miseAvantHome ul li {
+   display:block;
+   float:left;
+   position:relative;
+   margin-right:5px;
+}
+div#miseAvantHome.golfMiseAvant ul li {
+   margin-right:1px;
+}
+
+div.golfMiseAvant{
+width:635px;
+}
+div#miseAvantHome ul li.lienMiseAvantSPE { margin-right:0px; }
+
+
+
+
+.important {
+   font-weight:bold;
+}
+#contenu_tournoi {
+   position:relative;
+   margin:0px auto 0px auto;
+   width:635px;
+   margin-top:0px;
+   padding:0px;
+   background:url('http://media.mth.net/sport_plus/images/events/fond_block.jpg') no-repeat 0px 142px;
+/* //////////////////// Ajout //////// */
+   float:left;
+}
+#contenu_tournoi ul {list-style:none;}
+#contenu_tournoi #contenu_texte {
+   font-family:Verdana, Arial, sans-serif;
+   color:#fff;
+   font-size:10px;
+   float:left;
+   width:370px;
+   text-align:justify;
+   padding:16px 12px 0px;
+}
+#contenu_tournoi #diffusions {
+   width:240px;
+   float:left;
+   margin-left:1px;
+   margin-top:1px;
+}
+#diffusions h3 {
+   margin:0px;
+   font-family:Arial, sans-serif;
+   font-size:18px;
+   color:#fff;
+   padding:5px 12px;
+}
+#diffusions p {
+   padding:10px;
+   float:left;
+   width:220px;
+   color:#fff;
+}
+#diffusions ul  {
+   float:left;
+   padding-left:20px;
+}
+
+#diffusions.diffusions_couleur_Basket           h3 {background:#FF8D3D;}
+#diffusions.diffusions_couleur_Hand             h3 {background:#4F8BCA;}
+#diffusions.diffusions_couleur_Foot             h3 {background:#7ABD5E;}
+#diffusions.diffusions_couleur_Golf             h3 {background:#198A5F;}
+#diffusions.diffusions_couleur_Tennis           h3 {background:#D7B53B;}
+#diffusions.diffusions_couleur_Rugby            h3 {background:#E4322D;}
+#diffusions.diffusions_couleur_Volley           h3 {background:#D74398;}
+#diffusions.diffusions_couleur_SportsUS         h3 {background:#A454C6;}
+#diffusions.diffusions_couleur_Sportsdeglisse         h3 {background:#A88766;}
+#diffusions.diffusions_couleur_Autres           h3 {background:#60BEE7;}
+
+
+#diffusions.diffusions_couleur_Hand .sous_titre          {color:#4F8BCA;}
+#diffusions.diffusions_couleur_Foot .sous_titre          {color:#7ABD5E;}
+#diffusions.diffusions_couleur_Golf .sous_titre       {color:#198A5F;}
+#diffusions.diffusions_couleur_Tennis .sous_titre        {color:#D7B53B;}
+#diffusions.diffusions_couleur_Rugby .sous_titre         {color:#E4322D;}
+#diffusions.diffusions_couleur_Volley .sous_titre        {color:#D74398;}
+#diffusions.diffusions_couleur_SportsUS .sous_titre         {color:#A454C6;}
+#diffusions.diffusions_couleur_Sportsdeglisse .sous_titre      {color:#A88766;}
+#diffusions.diffusions_couleur_Autres .sous_titre        {color:#60BEE7;}
+
+#diffusions ul  span{
+   list-style:none;
+   font-family:Verdana, Arial, sans-serif;
+}
+#diffusions span {
+   font-weight:bold;
+   font-size:12px;
+   color:#DFDFDF;
+}
+#diffusions {
+   line-height:14px;
+   font-weight:normal;
+   font-size:12px;
+   color:#C4BABA;
+}
+#diffusions {
+   font-weight:normal;
+   font-size:12px;
+   font-family:Verdana, Arial, sans-serif;
+}
+#pied_tournoi {
+   clear:both;
+   width:100%;
+   height:300px;
+   position:relative;
+   top:0px;
+   padding-top:0px;
+   margin-top:0px;
+
+}
+#resultats_tournoi {
+   float:left;
+   width:289px;
+   height:158px;
+   position:relative;
+   
+   font-family:Verdana, Arial, sans-serif;
+   color:#fff;
+   font-size:14px;
+   
+   padding:142px 14px 0px;
+}
+.image_fond_tournoi {
+   position:absolute;
+   top:0px;
+   left:0px;
+
+}
+#classement_tournoi {
+   float:left;
+   width:289px;
+   height:158px;
+   border-left:1px solid #000;
+   position:relative;
+   
+   font-family:Verdana, Arial, sans-serif;
+   color:#fff;
+   font-size:14px;
+   padding:142px 14px 0px;
+}
+#resultats_tournoi h3, #classement_tournoi h3 {
+   font-size:18px;
+   font-weight:bold;
+   margin-bottom:1px;
+   position:relative;
+}
+#resultats_tournoi h4 {
+   font-family:Verdana, Arial, sans-serif;
+   font-weight:normal;
+   margin-bottom:6px;
+   position:relative;
+}
+#resultats_tournoi ul {list-style:none;position:relative;}
+#resultats_tournoi ul li {
+   font-size:16px;
+}
+.appel_cplus_fr {
+   bottom:13px;
+   right:9px;
+   color:#000;
+   font-size:10px;
+   font-weight:bold;
+   line-height:10px;
+   position:absolute;
+   text-align:right;
+}
+.appel_cplus_fr .plus_2 {
+   color:#FFFFFF;
+   font-family:Arial,Verdana,sans-serif;
+   font-size:19px;
+   font-weight:bold;
+   left:-5px;
+   position:relative;
+   top:3px;
+   line-height:12px;
+}
+.appel_cplus_fr img {
+   position:relative;
+   display:inline;
+   top:5px;
+   left:1px;
+}
+.appel_cplus_fr .decalage {
+   position:relative;
+   top:-8px;
+   left:11px;
+}
+#classement_tournoi table {width:100%;position:relative;}
+#classement_tournoi table td, #classement_tournoi table th {text-align:left;}
+#classement_tournoi table thead th {font-weight:normal;}
+#classement_tournoi table th.titre_table_classement {
+   text-align:right;
+   padding-right:7px;
+}
+
+img.imageBandeautournoi {
+   position:relative;
+   display:block;
+   width:635px;
+   height:142px;
+}
+.appel_cplus_fr p {
+   display:inline;
+}
+.appel_cplus_fr a {
+   color:#000;
+   text-decoration:none;
+}
+
+
+div.conteneurChaine ul.list_result li{
+   float:none;
+   border:none;
+}
+
+div.conteneurChaine ul.list_result_sport li{
+   float:none;
+   border:none;
+   text-align:left;
+}
+div.conteneurChaine ul.list_result_sport li.none {
+   padding:0px;
+   color:#FFFFFF; 
+   font-size:11px;
+   font-family:Verdana,Arial,sans-serif;
+}
+
+div.conteneurChaine ul.list_result_sport{
+   height:auto;
+   float:none;
+   border:none;
+   text-align:left;
+}
+
+div.conteneurChaine ul.list_result_sport li a span.FOOT{
+   color: #7ABD5E;
+}
+div.conteneurChaine ul.list_result_sport li a span.BASKET{
+   color: #FF8D3D;
+}
+div.conteneurChaine ul.list_result_sport li a span.TENNIS{
+   color: #D7B53B;
+}
+div.conteneurChaine ul.list_result_sport li a span.GOLF{
+   color: #009966;
+}
+div.conteneurChaine ul.list_result_sport li a span.RUGBY{
+   color: #FF8D3D;
+}
+div.conteneurChaine ul.list_result_sport li a span.SPORTSUS{
+   color: #FF8D3D;
+}
+div.conteneurChaine ul.list_result_sport li a span.HAND{
+   color: #4F8BCA;
+}
+div.conteneurChaine ul.list_result_sport li a span.VOLLEY{
+   color: #D74398;
+}
+div.conteneurChaine ul.list_result_sport li a span.SPORTSDEGLISSE{
+   color: #A88766;
+}
+
+
+
+
+div.conteneurChaine ul.list_result {
+   color:white;
+   font-family:Verdana,Arial,sans-serif;
+   font-size:11px;
+   height:auto;
+   text-align:justify;
+}
+
+
+
+div.conteneurChaine ul.list_result_video li {
+   display:block;
+   float:left;
+   padding:0px;
+   border:0px;
+   color:#FFFFFF; 
+   font-size:11px;
+   font-family:Verdana,Arial,sans-serif;
+}
+div.conteneurChaine p.results{
+   margin-bottom:15px;
+   clear:both;
+}
+div.conteneurChaine ul.list_result_video{
+   text-align:justify;
+}
+
+div.conteneurChaine ul.list_result_video li a span{
+   color:#FFFFFF;
+}
+
+div.contenuProgRecherche h3{font-size:11px;}
+
+/* ///// AJOUT DU 10-07-2008 Slogan sur la home et les sous pages... //////// */
+#slogan_home {
+   position:absolute;
+/* top:52px;
+   left:183px;*/
+   top:81px;
+   left:205px;
+   zoom:1;
+   z-index:0;
+}
+#slogan_sous_home {
+   position:absolute;
+   top:52px;
+   left:183px;
+   zoom:1;
+   z-index:0;
+}
+.concours #slogan_sous_home, .video_vrai #slogan_sous_home {
+   left:194px;
+}
+/* ///// FIN AJOUT DU 10-07-2008 ////////////////////////////////////////// */
+
+
+div.conteneurChaine p.research{
+   margin-bottom:20px;
+}
+
+#debugMenu, #debugMenu * {z-index:20;}
+
+
+#debug_ie_encore_un {
+   width:100%;
+   height:142px;
+}
+#entete {height:16px;}
+
+/* Popin vidéos */
+#conteneurPopinVideo {
+   width: 542px;
+   height: 406px;
+   position: absolute;
+   display: none;
+   z-index: 1002;
+   background: url(http://media.mth.net/sport_plus/images/videos/fond-popin.jpg) repeat-x #000;
+}
+#conteneurPopinVideo a#fermerVideo {
+   display: block;
+   float: right;
+   text-indent: 5000px;
+   width: 12px;
+   margin: 7px 5px 0 0;
+   height: 20px;
+   overflow: hidden;
+}
+
+#conteneurPopinVideo #contenuVideo {
+   clear: both;
+   background: #000;
+   width: 544px;
+   height: 455px;
+   margin: 3px 0 0 20px;
+}
+
+.overlay {
+   display: none;
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   background: url('http://media.mth.net/sport_plus/images/videos/overlay.png') repeat;
+   z-index: 1001;
+   /*-moz-opacity: 0.8;
+   opacity:.80;
+   filter: alpha(opacity=80);*/
+}
+
+/* Modifs home 5/11/2008 */
+.conteneurHome .jScrollArrowUp {
+   /*margin-top: 1px;*/
+}
+.conteneurHome div#evenement {
+   height:345px;
+   margin-bottom: 4px;
+   background:#444;
+}
+.heureProg {
+   float: left;
+}
+#breves {
+   margin: 4px 0px 4px 5px;
+   width: 173px;
+   float: left;
+}
+
+#breves .debug {
+   margin-bottom: 0;
+}
+#breves h2 {
+   background-color: #575857;
+   width: 109px;
+   float: left;
+}
+#breves #cntBreves {
+   background: url('http://media.mth.net/sport_plus/images/breves/fond-breves.jpg') repeat-x #0B0B0B;
+   border: 1px solid #575857;
+   border-top: none;
+   height: 414px;
+   float: left;
+   width: 171px;
+   overflow: hidden;
+}
+.homeSport #breves #cntBreves {height:296px;}
+#cntBreves #hautBreves {
+   margin:10px 64px;
+   display:block;
+}
+#cntBreves #basBreves {
+   margin: 10px 64px 12px;
+   display:block;
+}
+#cntBreves dl {
+   width: 145px;
+   margin: 0 auto;
+   color: #fff;
+   font-family: Verdana;
+   font-size: 9px;
+   height: auto;
+   overflow: auto;
+}
+.homeSport #cntBreves dl {
+   color:#DFDFDF;
+}
+.homeSport #cntBreves dl {height:220px;}
+#cntBreves dl dt {
+   font-weight: bold;
+}
+
+
+#cntBreves dl dt .Tennis {
+   color: #D7B53B;
+}
+#cntBreves dl dt .Football {
+   color: #7ABD5E;
+}
+#cntBreves dl dt .Golf {
+   color: #009966;
+}
+#cntBreves dl dt .Basket {
+   color: #FF8D3D;
+}
+#cntBreves dl dt .Rugby{
+   color: #FF8D3D;
+}
+#cntBreves dl dt .SportsUS{
+   color: #FF8D3D;
+}
+#cntBreves dl dt .Hand{
+   color: #4F8BCA;
+}
+#cntBreves dl dt .Volley{
+   color: #D74398;
+}
+#cntBreves dl dt .Sportdeglisse{
+   color: #A88766;
+}
+
+
+#cntBreves dl dd {
+   padding-bottom: 16px; 
+}
+#cntBreves dl dd a {
+   text-decoration: none;
+}
+#cntBreves dl dd a:link, #cntBreves dl dd a:visited {
+   color: #fff;
+   font-weight:normal;
+}
+
+.sousConteneurHome div#piedPage, .conteneurTournoi div#piedPage {
+   margin-top: 16px;
+}
+.conteneurHome div.debug {
+   margin-bottom: 0;
+}
+#conteneur_push_edito {position:absolute;top:0px;left:425px;width:200px;height:195px;z-index:200;}
+#contenenur_titre_push_edito {clear:both;}
+#plusEdito, #plusEdito img {float:left;width:33px;height:18px;display:block;}
+
+#contenenur_titre_push_edito h3 {float:left;}
+#push_edito {
+   position:absolute;
+   left:0px;
+   color:#fff;
+   font-family:Verdana, Arial, sans-serif;
+   font-size:9px;
+   width:200px;
+   float:left;
+   background:#198A5F;
+   bottom:0px;
+   _bottom:-1px;
+}
+#push_edito a {display:block;text-decoration:none;color:#fff;position:relative;}
+#push_edito span {
+   padding:10px 6px;
+   text-align:left;
+   display:block;
+}
+#plusEdito span {padding:0px;}
+#push_edito h3 {
+   font-size:12px;
+   font-weight:bold;
+   padding:0px;
+   padding-top:2px;
+   width:167px;
+   display:block;
+   float:left;
+   background-color: #000;
+   height:16px;
+}
+#push_edito #contenu_push_edito {
+   padding:0px;
+   text-align:left;
+   display:block;
+   height:164px;
+   width:200px;
+   float:left;
+}
+
+/* Fond de l'entete des pages tournoi */
+#conteneur.tournoiBasket #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-basket.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiHand #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-hand.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiFoot #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-foot.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiGolf #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-golf.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiTennis #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-tennis.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiRugby #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-rugby.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiVolley #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-volley.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiSportsUS #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-sport-us.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiHockey #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-sport-us.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiLigueMagnus #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-sport-us.jpg) repeat-y 0px 0px;}
+#conteneur.tournoiSportsdeglisse #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-sport-glisse.jpg) repeat-y 0px 0px;}
+#conteneurCalendrier h4, #conteneurCalendrier th {font-size:10px;}
+
+
+
+
+/* BASKET Couleur de fond 1 /////////////////////////////////////// */
+div#sousMenu ul#sousMenuBasket,
+.tournoiBasket #cntEntete .rectPlus,
+.tournoiBasket .rectPlus,
+.tournoiBasket p.retrouver,
+.tournoiBasket #cntEntete .rectPlus,
+.tournoiBasket .rectPlus
+{background:#FF8D3D;}
+/* fond 2 */
+.tournoiBasket #conteneurClassement table thead tr,
+.tournoiBasket .entete_table thead tr,
+.tournoiBasket thead.entete_table tr,
+.tournoiBasket #conteneurClassement table thead tr td,
+.tournoiBasket .entete_table thead tr td,
+.tournoiBasket #conteneurCalendrier table thead.entete_table tr,
+.tournoiBasket #rslts h4,
+.tournoiBasket #rslts table thead tr
+{background:#FFBC8F;}
+/* texte 1 */
+.tournoiBasket div.contenuProg h3,
+.tournoiBasket #rslts table td.score,
+.tournoiBasket #conteneurCalendrier table tr td.date,
+.tournoiBasket #conteneurClassement table tr td
+{color:#FFBC8F;}
+/* texte 2 */
+.tournoiBasket #conteneurClassement table tr td.cel_4,
+.tournoiBasket #conteneurClassement table tr td.cel_5,
+.tournoiBasket #conteneurClassement table tr td.cel_6,
+.tournoiBasket #conteneurClassement table tr td.cel_7,
+.tournoiBasket #conteneurClassement table tr td.cel_8,
+.tournoiBasket #conteneurClassement table tr td.cel_9,
+.tournoiBasket #conteneurClassement table tr td.cel_10
+{color:#FF8D3D;}
+/* Bordure 1 */
+.tournoiBasket #conteneurClassement table thead tr td,
+.tournoiBasket .entete_table thead tr td,
+.conteneurTournoi #conteneurCalendrier table thead tr td
+{border-right:1px solid #FFBC8F;}
+/* Bordure 2 */
+.tournoiBasket .boite
+{border:1px solid #FF8D3D;}
+/* fond et bordures tableau TOURNOI*/
+.tournoiBasket #rslts table tr.pair,
+.tournoiBasket #conteneurClassement table tr.impair,
+.tournoiBasket #conteneurRslt table tr.impair,
+.tournoiBasket #conteneurCalendrier table tr.impair
+{background-color:#30241C;}
+/* Bordure talbeau page TOURNOI */
+.tournoiBasket #conteneurClassement table tr td,
+.tournoiBasket #conteneurCalendrier table tr td,
+.tournoiBasket #conteneurRslt table tr td{border-right:1px solid #794B2A;}
+.tournoiBasket #contenu #cntEntete div#presentation { background: url(http://media.mth.net/sport_plus/images/tournoi/fond-entete-basket.jpg) repeat-y 0px 0px #fff;}
+.tournoiBasket #contenu div.heureProg { background-image:url(http://media.mth.net/sport_plus/images/tournoi/fond-heure-basket.jpg); }
+
+.conteneurHome #cntBreves dt span {color:#60BEE7;}
+
+#rslts thead td, #rslts thead th,
+#classement thead td, #classement thead th,
+#calendrier thead td, #calendrier thead th, 
+#calendrier thead tr, #calendrier thead {position:relative;height:17px;}
+
+#rslts thead td h4, #rslts thead th h4,
+#classement thead td h4, #classement thead th h4,
+#calendrier thead td h4, #calendrier thead th h4 {position:relative;top:0px;left:0px;width:100%;text-align:center;height:14px;padding-top:3px;}
+embed {display:block;}
+
+/* Page Fiche Agenda */
+#sousConteneurSport .liste_fede_fiche li {
+width:500px;
+border:0px;
+float:left;
+height:auto;
+margin:0px;
+padding:0px;
+margin-right:22px;
+margin-bottom:8px;
+padding-bottom:15px;
+border-bottom:1px solid #454846;
+}
+#sousConteneurSport .liste_fede_fiche li.fin_ligne {margin-right:0px;}
+#sousConteneurSport .liste_fede_fiche li a {margin:0px;height:auto;position:static;left:0px;left:0px;}
+#sousConteneurSport .liste_fede_fiche li a img {display:block;float:left;clear:none;margin:0px 15px 0px 0px;}
+#sousConteneurSport .liste_fede_fiche li a span {display:block;text-align:left;margin-left:10px;;font-size:11px;font-weight:bold;text-transform:uppercase;color:#60BEE7;clear:none;width:100%;}
+* html #sousConteneurSport .liste_fede_fiche li a span {display:block;text-align:left;margin-left:10px;;font-size:11px;font-weight:bold;text-transform:uppercase;color:#60BEE7;clear:none;width:400px;position:absolute;top:0px;}
+*+html #sousConteneurSport .liste_fede_fiche li a span {display:block;text-align:left;margin-left:10px;;font-size:11px;font-weight:bold;text-transform:uppercase;color:#60BEE7;clear:none;width:400px;position:absolute;top:0px;}
+.retour_agenda {border-top:1px solid #454846;margin-top:20px;padding-top:10px;}
+.retour_agenda a {font-family:Verdana, Arial, sans-serif;font-weight:bold;font-size:11px;color:#fff;text-decoration:none;}
+/* Page Index Agenda */
+#push_index_fede {margin-bottom:5px;margin-top:20px;padding-bottom:58px;padding-top:25px;}
+#push_index_fede img {float:left;margin-right:20px;}
+#push_index_fede span {font-family:Verdana, Arial, sans-serif;display:block;color:#fff;font-size:10px;}
+#push_index_fede span.titre {font-size:11px;font-weight:bold;color:#60BEE7;text-transform:uppercase;}
+#push_index_fede a {display:block;font-family:Verdana, Arial, sans-serif;font-weight:bold;color:#fff;text-decoration:none;font-size:10px;text-align:right;margin-top:20px;}
+
+#titre_agenda {padding-bottom:0px;}
+#titre_agenda img,
+#titre_agenda span {width:115px;height:37px;display:block;background-repeat:none;position:relative;}
+
+/* JEU CONCOURS */
+div.conteneurJeu {
+   position:relative;
+   width:635px;
+   padding:0px;
+   float:left;
+   padding-top:0px;margin-top:4px;
+   height:1022px;
+}
+div.conteneurJeu.contenu_sous_pages {padding:398px 40px 0px;width:555px;height:624px;}
+.contenu_sous_pages .scroll-pane {margin:0px;font-family:Verdana, Arial, sans-serif;font-size:12px; color:#444;font-weight:bold;height:360px;overflow:auto;padding-right:10px;width:540px;}
+.contenu_sous_pages.inscription .scroll-pane {height:398px;}
+.contenu_sous_pages h2 {font-family:Arial, sans-serif;font-size:14px; color:#333333;font-weight:bold;margin-bottom:10px;}
+.conteneurJeu .lien_retour {font-family:Arial, sans-serif;font-size:12px; color:#444;text-decoration:underline;font-weight:bold;display:block;text-align:center;padding-top:10px;background:#fff;}
+.conteneurJeu.merci {padding-top:20px;}
+#form_question_jeu fieldset {border:0px;margin-top:10px;}
+#form_question_jeu ul {margin-left:45px;list-style:none;margin-bottom:30px;}
+#form_question_jeu ul li {clear:both;height:20px;}
+#form_question_jeu ul input {display:block;width:15px;height:15px;float:left;}
+#form_question_jeu ul label {display:block;float:left;margin-left:10px;font-style:italic;}
+#form_question_jeu #envoi_question {display:block;background:#999999;text-align:center;font-family:Arial, sans-serif;color:#fff;font-size:14px;font-weight:bold;padding:5px 18px;border:0px;text-transform:uppercase;margin:30px 0px 0px;position:relative;left:410px;}
+
+/* Page d'inscription  */
+div.conteneurJeu.contenu_sous_pages.inscription {padding:398px 0px 0px;width:635px;height:624px;}
+.conteneur_asc {padding:0px 40px;background:#fff;position:relative;}
+#contactform table {width:530px;}
+#contactform .name {padding:10px 10px 15px 0px;}
+#contactform .name a {color:#444444;}
+#contactform .controlRadio input {margin-right:5px;}
+#contactform #civ2, #contactform #civ3,
+#contactform #news_2,
+#contactform #info_2,
+#contactform #infocp_2,
+#contactform #infocp_2,
+#contactform #infop_2,
+#contactform #abo_2 {margin-left:10px;}
+#contactform .control select {width:48px;}
+#contactform .control input {width:144px;}
+#contactform #PROF_LASTNAME,
+#contactform #PROF_FIRSTNAME,
+#contactform #PROF_ADDRESS_1,
+#contactform #PROF_ADDRESS_2,
+#contactform #PROF_ADDRESS_3,
+#contactform #PROF_ZIP,
+#contactform #PROF_CITY,
+#contactform #PROF_CTRY_ID,
+#contactform #PROF_PHONE,
+#contactform #PROF_EMAIL {width:240px;}
+#contactform .checkboxRadio input {margin-right:5px;margin-left:0px;}
+#contactform #validation {padding-left:415px;}
+#contactform #validation input {margin-top:30px;padding:6px 0px;text-align:center;font-family:Arial, sans-serif;font-weight:bold;font-size:12px;color:#fff;background:#999;text-transform:uppercase;border:0px;height:28px;}
+#contactform .label {width:236px;float:left;height:15px;}
+#contactform .checkboxRadio input {display:block;width:15px;height:15px;float:left;}
+#contactform .checkboxRadio input.hidden {display:none;}
+
+/* ///////////////////////////////////////// AJOUT du 08/07/2009 /////////////////////////////////// */
+
+.conteneurMentions  #contact{
+   color:#60BEE7;
+   font-weight:bold;
+   margin-top:40px;
+   float:left;
+}
+div.conteneurMentions{
+   padding-top:12px;
+}
+.conteneurMentions  label{
+   display:block;
+   height:20px;
+}
+.conteneurMentions  .left input,.conteneurMentions  .right input, .conteneurMentions  select{
+   width:270px;
+   margin-bottom:15px;
+}
+.conteneurMentions  textarea, .conteneurMentions  .left, .conteneurMentions  .right,  .conteneurMentions p, .conteneurMentions .fileinputs, div.fakefile input, div.fakefile img{
+   float:left;
+}
+.conteneurMentions select {
+   width:275px;
+}
+.conteneurMentions textarea {
+   width:587px;
+}
+.conteneurMentions  .left{
+   width:320px;
+}
+.conteneurMentions  #info{
+   color:#666666;
+   float:left;
+   font-size:9px;
+   font-weight:bold;
+   padding-top:5px;
+}
+.conteneurMentions  #info2{
+   color:#999999;
+   float:left;
+   font-size:9px;
+   font-weight:bold;
+   padding-top:30px;
+}
+.conteneurMentions  h2{
+   margin-bottom:10px;
+   float:left;
+}
+.conteneurMentions  .fileinputs{
+   margin-top:15px;
+}
+.conteneurMentions #validerFormContact{
+   float:left;
+   margin-left:90px;
+   margin-top:36px;
+}
+
+.conteneurMentions div.fileinputs {
+   float:left;
+   position:relative;
+   width:400px;
+}
+
+.conteneurMentions input.file {
+   opacity:0;
+   FILTER: alpha(opacity: 0);
+   position:relative;
+   right:0;
+   text-align:right;
+   top:0;
+   z-index:2;
+}
+
+.conteneurMentions div.fakefile {
+   left:0;
+   position:absolute;
+   top:23px;
+   z-index:1;
+}
+
+.conteneurMentions div.fakefile img {
+   left:8px;
+   position:relative;
+   top:-2px;
+}
+
+.conteneurMentions div#customSelectSubject, .conteneurMentions div#customSelect {
+   display:none;
+}
+.conteneurMentions div#customSelectSubject {
+   background:transparent url(http://media.mth.net/sport_plus/images/mentions/select.jpg) no-repeat scroll left top;
+   height:20px;
+   left:341px;
+   position:absolute;
+   top:274px;
+   width:271px;
+   z-index:10;
+}
+
+.conteneurMentions div#customSelect {
+   background-color:white;
+   cursor:pointer;
+   display:none;
+   left:342px;
+   position:absolute;
+   top:293px;
+   width:270px;
+}
+
+.conteneurMentions div#customSelectSubject p {
+   height:10px;
+   left:6px;
+   padding-left:2px;
+   padding-top:3px;
+   position:absolute;
+   top:0;
+}
+
+.conteneurMentions ul{
+   list-style-type:none;
+}
+
+.conteneurMentions div#customSelect li {
+   padding-left:7px;
+}
+
+.conteneurMentions .textBlack {
+   color:#000000;
+   font-weight:bold;
+}

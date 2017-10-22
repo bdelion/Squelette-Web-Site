@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+   $(document).ready(function(){
+      $("li").hover(
+            function () {
+               $(this).append($("<span> ***</span>"));
+            },
+            function () {
+               $(this).find("span:last").remove();
+            }
+      );
+      //li with fade class
+      $("li.fade").hover(
+            function() {
+               $(this).fadeOut(100);
+               $(this).fadeIn(500);
+            },
+            function() {
+               $(this).fadeOut(500);
+               $(this).fadeIn(100);
+            }
+      );
+   });
+   function SurvoleSouris(Objet)
+   {
+        Objet.style.color="white"; /* Vous pouvez bien sûr modifier la couleur "white" en ce que vous voulez, j'en ai mis une simple pour cet exemple */
+        Objet.style.backgroundColor="black"; /* idem */
+   }
+   function SourisPartie(Objet)
+   {
+        Objet.style.color="black"; /* Couleur par défaut, quand la souris n'est pas sur le texte */
+        Objet.style.backgroundColor="white"; /* idem */
+   }
+  </script>
+  <style>
+  ul { margin-left:20px; color:blue; }
+  li { cursor:default; }
+  span { color:red; }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Milk</li>
+    <li>Bread</li>
+    <li class='fade'>Chips</li>
+    <li class='fade'>Socks</li>
+  </ul>
+  <p onMouseOver="SurvoleSouris(this);" onMouseOut="SourisPartie(this);">Texte à modifier</p>
+</body>
+</html>

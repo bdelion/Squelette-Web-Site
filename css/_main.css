@@ -1,0 +1,372 @@
+@CHARSET "ISO-8859-1";
+
+
+
+/****************************************************/
+/* #id : pour un élément unique                                                  */
+/* .classe : pour un élément redondant                                        */
+/****************************************************/
+/* La balise <SPAN> ... </SPAN> permet d'appliquer des styles à des éléments de texte d'un paragraphe ou si vous préférez à un morceau de paragraphe */
+/* La balise <DIV> ... </DIV> permet de regrouper plusieurs paragraphes ou si vous préférez, de délimiter une zone comportant plusieurs paragraphes */
+/****************************************************/
+
+/* Disposition
+****************************************************/
+/* *{
+   margin: 0;
+   padding:0;}
+  
+body{
+   width:95%;
+   margin:0 auto 0 auto;
+   _height:1000px;
+   min-width:950px;
+   background:#EFEFF1;
+   font:78% 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+   color:black;}
+<!--[if lt IE 7]>
+body{
+  width:1000px;
+  width:expression(document.body.clientWidth < 1000? "1000px": "auto" );
+}
+<![endif]--> 
+*/
+#container{
+   width:99%;
+   margin:0 auto 0 auto;
+   DEBUG background-color:black;}
+   
+body {
+   color: black;
+   background: #EFECE2;
+   font: normal 80% "Trebuchet MS", Verdana, "Lucida Grande", Tahoma, Helvetica, Sans-Serif;}
+   
+a img {
+  border: 0;
+}
+
+html, body, ol, ul, form, fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+textarea {
+  font: inherit;
+}
+
+#print {
+  display:none;
+}
+
+   
+#topbar{
+   padding-left: 10px;
+   padding-right: 10px; 
+   width:auto;
+   margin:0;
+   background-image: url(header_background.png);
+   background-repeat: repeat-x;
+   height: 100px;
+   /* DEBUG background-color:blue;*/}
+   
+#navbar{
+   padding: 0.1em 0.2em 0.1em 0.2em;
+   /* line-height: 1.5em; */
+   /* font-size: 1em; */
+/*    padding-left: 10px;
+   padding-right: 10px; */
+   width:auto;
+/*    height:24px; */
+   height:1.5em;
+   background-color:#7FCBCC; 
+   /* DEBUG background-color:#D1D4DD;*/}
+
+#header-sep {
+  line-height: 2px;
+  font-size: 1px;
+  height: 2px;
+  background-color: #D7D4CB; 
+}
+
+#header-sep .inside {
+  background: url(header-sep.png) center top;
+  margin: 0 auto;
+  width: 990px;
+}
+
+#main{
+   width:90%;
+   margin:0 auto 0 auto;
+   overflow: hidden;
+   /* DEBUG background-color:white;*/
+   color:black;
+   text-align: left;}
+
+#column_left, #column_center, #column_right{
+   margin-top: 0px;
+   padding-bottom: 32767px;
+   margin-bottom: -32767px;}
+   
+#column_left{
+   float:left;
+   width:15%;
+   margin-right:0.5%;
+   /* DEBUG background-color:pink;*/}
+   
+#column_center{
+   float:left;
+   width:67.5%;
+   padding-top: 3px;
+   padding-right: 0.5%;
+   padding-left: 0.5%;
+   
+   text-align: justify;
+   border-width: 0px 2px 0px 2px;
+   border-style: solid;
+   border-color:#9fc2ff;
+   background-color:white;
+   /* DEBUG background-color:yellow;*/}
+   
+#column_right{
+   float:left;
+   width:15%;
+   /*display:block;*/
+   margin-left:0.5%;
+   /* DEBUG background-color:green;*/}
+   
+.menu{
+   width:100%;
+   margin:0 auto 0 auto;
+   /* DEBUG background-color:white;*/}
+
+.category{
+   padding-top: 5px;}
+
+/*
+div.spacer, permet de faire deux colonne dans #container
+*/
+div.spacer{
+   clear:both;
+   /* DEBUG background-color:#99FFCC;*/}
+   
+#footer{
+   padding:0;
+   width:auto;
+   margin: 0;
+   background-color:#7FCBCC;
+   height:2em;
+   /* DEBUG background-color:#D1D4DD;*/}
+
+/*****************************************************/
+/*****************************************************/
+
+/* Typo
+****************************************************/
+h1, h2, h3, h4 {
+   font-family:"Trebuchet MS",Verdana,Sans-Serif;}
+
+h1{
+   font-size: 2.5em;
+   text-align:center;}
+
+a{
+   font-weight: bold;
+   color: #638edd;
+   text-decoration: none;}
+   
+p{
+   line-height: 1.5em;
+   margin-bottom: 1.0em;
+   font-size: 0.9em;}
+  
+/*
+
+h1 a{
+   color:#fff;
+   border: none;}
+
+h1 em{
+   color: #f3f3a5;
+   font-style: normal;}
+
+h2 {
+   font-size: 1.5em;
+   letter-spacing: 0.4pt;
+   color: #FFE223;
+   text-transform: uppercase;
+   padding-top: 0.5em;}
+
+h3 {
+   font-size: 1.0em;
+   letter-spacing: 0.2pt;
+   color: #f0f0a3;
+   text-transform: uppercase;
+   padding-top: 0.5em;}
+
+h4 {
+   font-size: 1.0em;
+   color: Yellow;
+   text-transform: uppercase;}*/
+   
+/* Barre de titre
+****************************************************/
+#topbar{
+   width:auto;
+   margin:0;}
+   
+#logoMAAF{
+   position: relative;
+   top: 50%;
+   width: 113px;
+   height: 87px;
+   margin-top: -43.5px;
+   float: left;
+   background: url("logo-maaf.jpg") no-repeat;
+   background-color: transparent;}
+   
+#title{
+   position: relative;
+/*    padding-top: 0.5em;
+   padding-right: 1em; */
+   width:65%;
+   /* height:100%; */
+   margin:0;
+   color: #7FCBCC; 
+   text-align: center;
+   top: 50%;
+   float: left;}
+   
+#logoGENV{
+   position: relative; 
+   top: 50%;
+   width: 260px;
+   height: 100px;
+   margin-top: -50px;
+   float: right;
+   background: url("Genv Harvest 6 trans.png") no-repeat;
+   background-color: transparent;}
+
+/* Barre de navigation
+****************************************************/
+/* #navbar p.#navigation{
+   padding-top: 0.5em;
+   padding-right: 1em;
+   color: #7FCBCC;
+   text-align: left;
+   vertical-align: baseline;
+   float: left;
+   width: 400px;
+   background-color:yellow; } 
+   
+#navbar p.#datetime{
+   padding-top: 0.5em;
+   padding-right: 1em;
+   color: #7FCBCC;
+   text-align: right;
+   vertical-align: baseline;
+   float: left;
+   width: 400px;
+   background-color:yellow;} */
+   
+#navbar #navigation{
+   padding-left: 1em;
+   text-align: left;
+   font-size: 1em; 
+   vertical-align: baseline;
+   float: left;}
+   
+#navbar #datetime{
+   padding-right: 1em;
+   text-align: right;
+   font-size: 1em;
+   vertical-align: baseline;
+   float: right;}
+  
+/* Barre de menu
+****************************************************/
+.category h3{
+   font-size: 1.0em;
+   letter-spacing: 0.2pt;
+   text-transform: uppercase;
+  
+   padding: 0.1em 0.4em 0.1em 0.4em;
+   color: #C9CED1;
+   /* background-color: #00898C; */
+   background-color: #2C9FB1;
+   text-align: right;
+   font-weight: bold;}
+
+/* .category a{
+   _height: 0.0000001%;
+   color: #fff;}
+
+.category a:hover{
+   border-bottom: 1px dotted #fff;} */
+
+/*.category h1 a{
+   font-weight: bold;}
+
+.category h1 a:hover{
+   color: inherit;}*/
+
+.category ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;}
+
+.category ul:li{
+   margin: 0;
+   padding: 0;}
+
+.category ul a{
+   display: block;
+   padding: 0.1em 0.2em 0.1em 0.2em;
+   margin: 0;
+   color: #eee;
+   background-color: #E41869;
+   border-left: 8px solid #EF8DA3;
+   font-weight: normal;}
+
+.category ul a:hover{
+  color: #1a1a1a;
+  background-color: #EF8DA3;
+  border-left: 8px solid #E41869;}
+
+.category ul li.sel{
+  padding: 0.1em 0.2em 0.1em 0.2em;
+
+  color: black;
+  background-color: white;
+/*  border-left: 8px solid #008CA3;*/
+  border-left: 8px solid #B81033;}
+
+.category ul li.hidden{
+  display: none;}
+  
+ /* Autres
+****************************************************/
+img.polaroid:hover{
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  filter : alpha(opacity=100);
+  -moz-opacity : 1;
+  opacity: 1.0;
+}
+
+img.polaroid{
+  background-color: #fff;
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #5c5c5c;
+  height: 75px;
+  filter : alpha(opacity=70);
+  -moz-opacity : 0.7;
+  opacity: 0.7;
+}
